@@ -1,0 +1,119 @@
+{
+  "date": "2026-08-25",
+  "source": "猫眼专业版 dashboard-ajax (公开接口)",
+  "updated_at": "2026-08-25T14:07:17",
+  "has_province": false,
+  "has_audience": false,
+  "top": [
+    {
+      "rank": 1,
+      "movieId": "1500469",
+      "name": "功夫女足",
+      "releaseInfo": "上映46天",
+      "cumBox": 2309000000,
+      "dailyBox": 0,
+      "boxRate": 0.8,
+      "showCount": 9873,
+      "avgSeatView": 1.5
+    },
+    {
+      "rank": 2,
+      "movieId": "1516982",
+      "name": "给阿嬷的情书",
+      "releaseInfo": "",
+      "cumBox": 2003000000,
+      "dailyBox": 0,
+      "boxRate": 0.1,
+      "showCount": 490,
+      "avgSeatView": 5.3
+    },
+    {
+      "rank": 3,
+      "movieId": "1525868",
+      "name": "八仙！",
+      "releaseInfo": "上映39天",
+      "cumBox": 1757000000,
+      "dailyBox": 2000000,
+      "boxRate": 11.5,
+      "showCount": 39875,
+      "avgSeatView": 4.2
+    },
+    {
+      "rank": 4,
+      "movieId": "1462628",
+      "name": "欢迎来龙餐馆",
+      "releaseInfo": "上映15天",
+      "cumBox": 1644000000,
+      "dailyBox": 8000000,
+      "boxRate": 32.9,
+      "showCount": 133404,
+      "avgSeatView": 2.4
+    },
+    {
+      "rank": 5,
+      "movieId": "1490607",
+      "name": "蜘蛛侠：崭新之日",
+      "releaseInfo": "上映28天",
+      "cumBox": 1503000000,
+      "dailyBox": 1000000,
+      "boxRate": 5.0,
+      "showCount": 25116,
+      "avgSeatView": 2.7
+    },
+    {
+      "rank": 6,
+      "movieId": "1545360",
+      "name": "奥德赛",
+      "releaseInfo": "上映12天",
+      "cumBox": 494000000,
+      "dailyBox": 3000000,
+      "boxRate": 17.7,
+      "showCount": 24647,
+      "avgSeatView": 4.0
+    },
+    {
+      "rank": 7,
+      "movieId": "1528803",
+      "name": "小黄人与大怪兽",
+      "releaseInfo": "上映54天",
+      "cumBox": 311000000,
+      "dailyBox": 0,
+      "boxRate": 0.1,
+      "showCount": 726,
+      "avgSeatView": 2.0
+    },
+    {
+      "rank": 8,
+      "movieId": "1545588",
+      "name": "四渡",
+      "releaseInfo": "上映61天",
+      "cumBox": 288000000,
+      "dailyBox": 0,
+      "boxRate": 0.3,
+      "showCount": 603,
+      "avgSeatView": 9.8
+    },
+    {
+      "rank": 9,
+      "movieId": "1490532",
+      "name": "玩具总动员5",
+      "releaseInfo": "上映68天",
+      "cumBox": 286000000,
+      "dailyBox": 0,
+      "boxRate": 0.1,
+      "showCount": 63,
+      "avgSeatView": 2.6
+    },
+    {
+      "rank": 10,
+      "movieId": "1595625",
+      "name": "空枪",
+      "releaseInfo": "上映7天",
+      "cumBox": 246000000,
+      "dailyBox": 4000000,
+      "boxRate": 19.1,
+      "showCount": 66755,
+      "avgSeatView": 3.0
+    }
+  ]
+}

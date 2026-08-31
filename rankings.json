@@ -1,0 +1,196 @@
+{
+  "date": "2026-08-25",
+  "order_types": [
+    0,
+    1,
+    2
+  ],
+  "rankings": {
+    "0": [
+      {
+        "movieId": "1462628",
+        "name": "欢迎来龙餐馆",
+        "cumBox": 1644000000,
+        "boxRate": 32.9
+      },
+      {
+        "movieId": "1595625",
+        "name": "空枪",
+        "cumBox": 246000000,
+        "boxRate": 19.1
+      },
+      {
+        "movieId": "1545360",
+        "name": "奥德赛",
+        "cumBox": 494000000,
+        "boxRate": 17.7
+      },
+      {
+        "movieId": "1525868",
+        "name": "八仙！",
+        "cumBox": 1757000000,
+        "boxRate": 11.5
+      },
+      {
+        "movieId": "1490607",
+        "name": "蜘蛛侠：崭新之日",
+        "cumBox": 1503000000,
+        "boxRate": 5.0
+      },
+      {
+        "movieId": "1375786",
+        "name": "去你的岛",
+        "cumBox": 146000000,
+        "boxRate": 2.6
+      },
+      {
+        "movieId": "1455644",
+        "name": "牛来",
+        "cumBox": 48457000,
+        "boxRate": 2.6
+      },
+      {
+        "movieId": "1429933",
+        "name": "大唐妖探",
+        "cumBox": 25276000,
+        "boxRate": 2.1
+      },
+      {
+        "movieId": "1587931",
+        "name": "痴迷",
+        "cumBox": 203000000,
+        "boxRate": 1.4
+      },
+      {
+        "movieId": "1521734",
+        "name": "汪汪队立大功大电影3：勇闯恐龙岛",
+        "cumBox": 71656000,
+        "boxRate": 1.3
+      }
+    ],
+    "1": [
+      {
+        "movieId": "1462628",
+        "name": "欢迎来龙餐馆",
+        "cumBox": 1644000000,
+        "boxRate": 32.9
+      },
+      {
+        "movieId": "1595625",
+        "name": "空枪",
+        "cumBox": 246000000,
+        "boxRate": 19.1
+      },
+      {
+        "movieId": "1545360",
+        "name": "奥德赛",
+        "cumBox": 494000000,
+        "boxRate": 17.7
+      },
+      {
+        "movieId": "1525868",
+        "name": "八仙！",
+        "cumBox": 1757000000,
+        "boxRate": 11.5
+      },
+      {
+        "movieId": "1490607",
+        "name": "蜘蛛侠：崭新之日",
+        "cumBox": 1503000000,
+        "boxRate": 5.0
+      },
+      {
+        "movieId": "1375786",
+        "name": "去你的岛",
+        "cumBox": 146000000,
+        "boxRate": 2.6
+      },
+      {
+        "movieId": "1455644",
+        "name": "牛来",
+        "cumBox": 48457000,
+        "boxRate": 2.6
+      },
+      {
+        "movieId": "1429933",
+        "name": "大唐妖探",
+        "cumBox": 25276000,
+        "boxRate": 2.1
+      },
+      {
+        "movieId": "1587931",
+        "name": "痴迷",
+        "cumBox": 203000000,
+        "boxRate": 1.4
+      },
+      {
+        "movieId": "1521734",
+        "name": "汪汪队立大功大电影3：勇闯恐龙岛",
+        "cumBox": 71656000,
+        "boxRate": 1.3
+      }
+    ],
+    "2": [
+      {
+        "movieId": "1528327",
+        "name": "数到三",
+        "cumBox": 1759000,
+        "boxRate": 0.9
+      },
+      {
+        "movieId": "1525840",
+        "name": "平安的女儿",
+        "cumBox": 955000,
+        "boxRate": 0.2
+      },
+      {
+        "movieId": "1361711",
+        "name": "冬旅人",
+        "cumBox": 134000,
+        "boxRate": 0.1
+      },
+      {
+        "movieId": "1597407",
+        "name": "木兰2125：生日密令",
+        "cumBox": 23000,
+        "boxRate": 0.1
+      },
+      {
+        "movieId": "1365174",
+        "name": "密档",
+        "cumBox": 188000,
+        "boxRate": 0.1
+      },
+      {
+        "movieId": "1500916",
+        "name": "八卦楼",
+        "cumBox": 76000,
+        "boxRate": 0.1
+      },
+      {
+        "movieId": "8680",
+        "name": "秋天的童话",
+        "cumBox": 270000,
+        "boxRate": 0.1
+      },
+      {
+        "movieId": "1229799",
+        "name": "过春天",
+        "cumBox": 10329000,
+        "boxRate": 0.1
+      },
+      {
+        "movieId": "1520357",
+        "name": "蓝鲸：庞然大物归来",
+        "cumBox": 146000,
+        "boxRate": 0.1
+      },
+      {
+        "movieId": "1522873",
+        "name": "抓特务",
+        "cumBox": 119000000,
+        "boxRate": 0.1
+      }
+    ]
+  }
+}

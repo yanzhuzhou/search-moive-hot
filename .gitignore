@@ -1,0 +1,14 @@
+# 本地敏感配置（存放 Cookie，切勿提交）
+config/
+*.cookie
+cookie.txt
+
+# Python
+__pycache__/
+*.pyc
+
+# 调试原始响应
+data/_debug/
+
+# 打包交付物（勿提交）
+*.zip

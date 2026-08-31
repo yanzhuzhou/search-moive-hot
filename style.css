@@ -1,0 +1,130 @@
+:root{
+  --bg:#f4f6fb; --card:#ffffff; --ink:#1f2937; --muted:#6b7280;
+  --line:#e5e7eb; --brand:#3563e9; --brand2:#7c4dff; --accent:#ff7a45;
+  --shadow:0 6px 24px rgba(31,41,55,.08);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+  background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding:0 18px}
+.site-header{background:linear-gradient(120deg,#2b4cff,#7c4dff);color:#fff;padding:30px 0 26px;box-shadow:var(--shadow)}
+.site-header h1{font-size:26px;font-weight:700;letter-spacing:.5px}
+.site-header .subtitle{opacity:.92;margin-top:4px;font-size:14px}
+.site-header .meta{margin-top:10px;font-size:13px;background:rgba(255,255,255,.16);
+  display:inline-block;padding:4px 12px;border-radius:20px}
+.disclaimer{background:#fff7ed;border:1px solid #fed7aa;color:#9a3412;
+  font-size:12.5px;padding:10px 14px;border-radius:10px;margin:18px 0}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:14px;
+  padding:20px;margin:16px 0;box-shadow:var(--shadow)}
+.panel h2{font-size:18px;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.panel h2 .tag{font-size:11px;font-weight:500;color:#fff;background:var(--accent);
+  padding:2px 8px;border-radius:20px}
+.panel h3{font-size:14px;color:var(--muted);margin:6px 0 10px;font-weight:600}
+
+/* 数据集切换 */
+.tabs{display:flex;gap:10px;margin:18px 0 4px;flex-wrap:wrap}
+.tab{background:var(--card);border:1px solid var(--line);color:var(--muted);
+  padding:10px 20px;border-radius:10px;cursor:pointer;font-size:15px;font-weight:600;
+  transition:.15s;box-shadow:var(--shadow)}
+.tab:hover{border-color:var(--brand)}
+.tab.active{background:var(--brand);color:#fff;border-color:var(--brand)}
+.view{display:none}
+.view.active{display:block}
+
+/* 控制 */
+.controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.controls input[type=text]{flex:1;min-width:220px;padding:10px 12px;border:1px solid var(--line);
+  border-radius:10px;font-size:14px;outline:none}
+.controls input[type=text]:focus{border-color:var(--brand)}
+button{cursor:pointer;border:none;background:var(--brand);color:#fff;
+  padding:10px 18px;border-radius:10px;font-size:14px;font-weight:600;transition:.15s}
+button:hover{filter:brightness(1.08)}
+button.ghost{background:#eef2ff;color:var(--brand)}
+
+/* 图表 */
+.chart{width:100%;height:380px;margin:6px 0;min-height:320px}
+.chart.sm{height:300px;min-height:260px}
+.chart.xs{height:220px;min-height:180px}
+
+/* 详情区图表网格：评分+累计+当日 → 桌面端两列布局 */
+.detail-charts{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}
+.detail-charts .chart{height:300px;min-height:260px}
+.detail-charts .full-width{grid-column:1/-1}
+@media(max-width:820px){.detail-charts{grid-template-columns:1fr}}
+
+/* 表格 */
+.table-wrap{overflow-x:auto;margin-top:12px}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+th{background:#f8fafc;color:var(--muted);font-weight:600;font-size:12.5px}
+tbody tr:hover{background:#f8fafc}
+.rank-badge{display:inline-flex;width:24px;height:24px;align-items:center;justify-content:center;
+  background:var(--brand);color:#fff;border-radius:50%;font-size:12px;font-weight:700}
+.rank-badge.top{background:var(--accent)}
+
+/* 网格 */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.grid3 > div{background:#fafbfc;border:1px solid var(--line);border-radius:12px;padding:14px 10px 6px}
+.grid3 h3{font-size:13px;color:var(--ink);margin:0 0 4px 8px;font-weight:700;letter-spacing:.3px}
+.grid3 .chart{height:260px!important;min-height:220px!important;margin:0}
+
+/* 分布图：城市/院线/影院 各占一行全宽 */
+.dist-stack{display:flex;flex-direction:column;gap:24px}
+.dist-item{background:#fafbfc;border:1px solid var(--line);border-radius:12px;padding:16px 20px 8px}
+.dist-item h3{font-size:15px;color:var(--ink);margin:0 0 6px;font-weight:700}
+.dist-item .chart{height:320px;min-height:280px}
+
+@media(max-width:820px){.grid2,.grid3{grid-template-columns:1fr}}
+
+/* 检索档案卡 */
+.profile-card{display:flex;gap:18px;background:#f8fafc;border:1px solid var(--line);
+  border-radius:12px;padding:16px;margin-top:14px;flex-wrap:wrap}
+.profile-card img{width:120px;height:168px;object-fit:cover;border-radius:8px;background:#e5e7eb}
+.profile-info{flex:1;min-width:240px}
+.profile-info h3{font-size:20px;color:var(--ink);margin-bottom:6px}
+.profile-info .line{font-size:13.5px;color:var(--muted);margin:3px 0}
+.profile-info .big{font-size:22px;font-weight:700;color:var(--brand)}
+.kpis{display:flex;gap:14px;flex-wrap:wrap;margin-top:10px}
+.kpi{background:#fff;border:1px solid var(--line);border-radius:10px;padding:8px 14px;min-width:110px}
+.kpi .v{font-size:17px;font-weight:700;color:var(--ink)}
+.kpi .l{font-size:11.5px;color:var(--muted)}
+
+.note{background:#eff6ff;border:1px solid #bfdbfe;color:#1e40af;font-size:12.5px;
+  padding:10px 14px;border-radius:10px;margin:10px 0}
+.note.warn{background:#fff7ed;border-color:#fed7aa;color:#9a3412}
+.hidden{display:none!important}
+.site-footer{text-align:center;color:var(--muted);font-size:12.5px;padding:30px 0}
+
+/* 实时大盘条 */
+.realtime-bar{display:flex;gap:24px;flex-wrap:wrap;background:#0f172a;color:#fff;
+  border-radius:12px;padding:16px 20px;margin:16px 0}
+.realtime-bar .item .v{font-size:20px;font-weight:700}
+.realtime-bar .item .l{font-size:12px;opacity:.7}
+.realtime-bar .item .v small{font-size:12px;opacity:.7;font-weight:400}
+
+/* 可点击的榜单行 */
+tbody tr[data-name]{cursor:pointer}
+tbody tr[data-name]:hover{background:#eef2ff}
+tbody tr[data-name]:active{background:#e0e7ff}
+
+/* 评分徽章 */
+.ratings{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+.rating-badge{display:flex;align-items:baseline;gap:6px;flex-wrap:wrap;
+  background:#fff;border:1px solid var(--c,var(--line));border-left:4px solid var(--c,var(--brand));
+  border-radius:10px;padding:8px 12px;min-width:108px}
+.rating-badge .rb-src{font-size:12.5px;color:var(--muted);font-weight:600}
+.rating-badge .rb-score{font-size:20px;font-weight:800;color:var(--c,var(--ink));line-height:1}
+.rating-badge .rb-votes{font-size:11px;color:var(--muted);width:100%;margin-top:2px}
+.rating-badge .rb-link{font-size:13px;color:var(--c,var(--brand));text-decoration:none;margin-left:2px}
+.rating-badge .rb-link:hover{text-decoration:underline}
+.rating-badge.muted{opacity:.55;border-left-color:var(--line)}
+.rating-badge.muted .rb-score{font-size:14px;font-weight:600;color:var(--muted)}
+
+/* 影片简介 */
+.intro{margin-top:12px;background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.intro b{font-size:14px;color:var(--ink)}
+.intro .src{font-size:11.5px;color:var(--muted);margin-left:6px}
+.intro p{margin-top:6px;font-size:13.5px;color:#4b5563;line-height:1.7;max-height:160px;overflow:auto}
+.profile-card img{flex:0 0 auto}
+#ratingsChart{margin-top:16px}
