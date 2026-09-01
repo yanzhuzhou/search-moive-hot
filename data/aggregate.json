@@ -1,0 +1,1153 @@
+{
+  "meta": {
+    "updated_at": "2026-09-01 08:07:15",
+    "date": "2026-09-01",
+    "year": 2026,
+    "sources": [
+      "apizero.cn（猫眼数据封装，Top10 明文当日票房）",
+      "中影票房网 zgdypw.cn（国家电影专资办官方，城市/院线/影院分布+七日趋势）",
+      "猫眼专业版 piaofang.maoyan.com（累计票房+影片匹配）",
+      "猫眼 m.maoyan.com（购票评分+简介）",
+      "豆瓣 movie.douban.com（评分+简介，rexxar JSON）"
+    ],
+    "note": "三源融合票房 + 四源评分/简介富集：猫眼(m.maoyan.com)购票评分、豆瓣(rexxar)评分与简介、TMDB(需密钥)评分与简介、淘票票(需 Cookie)评分。点击榜单中的影片可查看评分对比与简介。「年度前十」为【在映累计近似】口径，非严格本年度排名。",
+    "has_login_data": false,
+    "ratings_enabled": {
+      "douban": true,
+      "maoyan": true,
+      "tmdb": false,
+      "taopiaopiao": false
+    }
+  },
+  "showing": {
+    "date": "2026-09-01",
+    "apizero_update": "2026-09-01 14:50:00",
+    "list": [
+      {
+        "rank": 1,
+        "name": "欢迎来龙餐馆",
+        "movieId": "1462628",
+        "daySalesWan": 725.92,
+        "daySalesYuan": 7259200,
+        "totalBoxDesc": "19.58亿",
+        "totalBoxYuan": 1957999999,
+        "boxRate": 30.3,
+        "showRate": 32.4,
+        "seatRate": 38.3,
+        "releaseDays": "上映22天",
+        "poster": "https://p0.pipi.cn/mediaplus/friday_image_fe/e42958bf15d77e374c8014b14e835a8b1f345.jpg?imageMogr2/quality/80",
+        "category": "剧情,战争",
+        "releaseDate": "2026-08-11",
+        "summary": "含腾量100%！ 是熟悉的沈腾，也是从未见过的沈腾！\n颠覆式演绎东北大厨闯荡乱世\n《我不是药神》导演文牧野首部美食反战大片，手搓式匠心！\n“好好吃饭”四个字，说出口是关怀，吃进嘴是安稳。有爱有和平！\n\n东北大厨徐福（沈腾 饰）为养家还债，扛着炒锅跑去中东一家中餐馆做厨师。他亮出龙抬头、拔丝地瓜、宫保鸡丁等各色中华美食，和前台经理马俊生（蒋奇明 饰）一个掌勺一个揽客，愣是把无人问津的龙餐馆经营得风生水起！然而战争突然爆发，当地局势急转直下。乱世之中，各方势力轮番登场，徐福的命运将会何去何从？战火中的龙餐馆又将如何维系？\n\n正宗中国味，征服世界胃！\n地道龙餐馆，满满人情味！",
+        "_source": "merged",
+        "dayAudience": 204425,
+        "daySession": 46995,
+        "zgFilmTotalSales": 1959080100,
+        "mySumBoxDesc": null,
+        "mySumBoxYuan": null,
+        "ratings": {
+          "douban": {
+            "score": 8.7,
+            "votes": 613867,
+            "url": "https://movie.douban.com/subject/35811064/"
+          },
+          "maoyan": {
+            "score": 9.7,
+            "votes": null,
+            "url": "https://m.maoyan.com/films/1462628"
+          }
+        },
+        "intro": "含腾量100%！ 是熟悉的沈腾，也是从未见过的沈腾！\n颠覆式演绎东北大厨闯荡乱世\n《我不是药神》导演文牧野首部美食反战大片，手搓式匠心！\n“好好吃饭”四个字，说出口是关怀，吃进嘴是安稳。有爱有和平！\n\n东北大厨徐福（沈腾 饰）为养家还债，扛着炒锅跑去中东一家中餐馆做厨师。他亮出龙抬头、拔丝地瓜、宫保鸡丁等各色中华美食，和前台经理马俊生（蒋奇明 饰）一个掌勺一个揽客，愣是把无人问津的龙餐馆经营得风生水起！然而战争突然爆发，当地局势急转直下。乱世之中，各方势力轮番登场，徐福的命运将会何去何从？战火中的龙餐馆又将如何维系？\n\n正宗中国味，征服世界胃！\n地道龙餐馆，满满人情味！",
+        "intro_source": "猫眼"
+      },
+      {
+        "rank": 2,
+        "name": "空枪",
+        "movieId": "1595625",
+        "daySalesWan": 549.46,
+        "daySalesYuan": 5494600,
+        "totalBoxDesc": "4.26亿",
+        "totalBoxYuan": 426000000,
+        "boxRate": 22.9,
+        "showRate": 18.5,
+        "seatRate": 18.6,
+        "releaseDays": "上映14天",
+        "poster": "https://p0.pipi.cn/mediaplus/friday_image_fe/e42958bf8d3e32fa46c735b4d294ad4ea03ec.jpeg?imageMogr2/quality/80",
+        "category": "剧情,犯罪",
+        "releaseDate": "2026-08-19",
+        "summary": "最“狠”的时代！最“黄金”的阵容！明暗交锋，强爽上头！ \n本片故事为虚构。90年代初，这座“遍地黄金”的欲望之城，秩序崩坏，犯罪丛生。打工仔万梓强（朱一龙 饰）一心想改写命运，在结识空姐骆嘉苑（卫诗雅 饰）后，两人联手作案，劫取巨额钱款，这次得手让万梓强愈发疯狂，也将他与富商陈辉延（梁家辉 饰）推向了更深的角力漩涡中。与此同时，内地警察亓宏刚（檀健次 饰）和香港警察关苏辰（李施嬅 饰）坚持对万梓强进行调查，两地警方联手行动，正邪较量一触即发。\n",
+        "_source": "merged",
+        "dayAudience": 154910,
+        "daySession": 31495,
+        "zgFilmTotalSales": 427064800,
+        "mySumBoxDesc": null,
+        "mySumBoxYuan": null,
+        "ratings": {
+          "douban": {
+            "score": 7.2,
+            "votes": 108815,
+            "url": "https://movie.douban.com/subject/37508847/"
+          },
+          "maoyan": {
+            "score": 9.6,
+            "votes": null,
+            "url": "https://m.maoyan.com/films/1595625"
+          }
+        },
+        "intro": "最“狠”的时代！最“黄金”的阵容！明暗交锋，强爽上头！ \n本片故事为虚构。90年代初，这座“遍地黄金”的欲望之城，秩序崩坏，犯罪丛生。打工仔万梓强（朱一龙 饰）一心想改写命运，在结识空姐骆嘉苑（卫诗雅 饰）后，两人联手作案，劫取巨额钱款，这次得手让万梓强愈发疯狂，也将他与富商陈辉延（梁家辉 饰）推向了更深的角力漩涡中。与此同时，内地警察亓宏刚（檀健次 饰）和香港警察关苏辰（李施嬅 饰）坚持对万梓强进行调查，两地警方联手行动，正邪较量一触即发。",
+        "intro_source": "猫眼"
+      },
+      {
+        "rank": 3,
+        "name": "奥德赛",
+        "movieId": "1545360",
+        "daySalesWan": 465.89,
+        "daySalesYuan": 4658900,
+        "totalBoxDesc": "6.07亿",
+        "totalBoxYuan": 607000000,
+        "boxRate": 19.4,
+        "showRate": 6.2,
+        "seatRate": 8.2,
+        "releaseDays": "上映19天",
+        "poster": "https://p0.pipi.cn/mediaplus/friday_image_fe/e42958b7bf877e82bf4ea94b3f71a8b7fea1c.JPG?imageMogr2/quality/80",
+        "category": "动作,历史,冒险,奇幻",
+        "releaseDate": "2026-08-14",
+        "summary": "《奥德赛》讲述特洛伊战争后，伊萨卡国王奥德修斯率部归家，途中历经风暴、怪物与神祇考验，漂泊十年。与此同时，其妻珀涅罗珀与幼子忒勒玛科斯在家乡应对众多求婚者的胁迫与阴谋。全片采用两条叙事线索并行，最终聚焦奥德修斯重返家园后的身份考验与道德审判，呈现一场关于生存、忠诚与归乡的史诗。",
+        "_source": "merged",
+        "dayAudience": 80881,
+        "daySession": 12252,
+        "zgFilmTotalSales": 613424000,
+        "mySumBoxDesc": null,
+        "mySumBoxYuan": null,
+        "ratings": {
+          "douban": {
+            "score": 8.6,
+            "votes": 446847,
+            "url": "https://movie.douban.com/subject/36808876/"
+          },
+          "maoyan": {
+            "score": 9.5,
+            "votes": null,
+            "url": "https://m.maoyan.com/films/1545360"
+          }
+        },
+        "intro": "《奥德赛》讲述特洛伊战争后，伊萨卡国王奥德修斯率部归家，途中历经风暴、怪物与神祇考验，漂泊十年。与此同时，其妻珀涅罗珀与幼子忒勒玛科斯在家乡应对众多求婚者的胁迫与阴谋。全片采用两条叙事线索并行，最终聚焦奥德修斯重返家园后的身份考验与道德审判，呈现一场关于生存、忠诚与归乡的史诗。",
+        "intro_source": "猫眼"
+      },
+      {
+        "rank": 4,
+        "name": "蜘蛛侠：崭新之日",
+        "movieId": "1490607",
+        "daySalesWan": 178.13,
+        "daySalesYuan": 1781300,
+        "totalBoxDesc": "15.41亿",
+        "totalBoxYuan": 1541000000,
+        "boxRate": 7.4,
+        "showRate": 6,
+        "seatRate": 5,
+        "releaseDays": "上映35天",
+        "poster": "https://p0.pipi.cn/mediaplus/friday_image_fe/e42958b7f8777e82bfd7e46fd331949d6e371.jpeg?imageMogr2/quality/80",
+        "category": "动作,冒险",
+        "releaseDate": "2026-07-29",
+        "summary": "蜘蛛侠全新力作《蜘蛛侠：崭新之日》重磅回归，开启史诗新篇章！\n彼得·帕克自愿让全世界遗忘自己，转眼已是四年。失去挚友、挚爱与亲人的陪伴，他独自重返街头，以全职蜘蛛侠的身份坚守使命，守护整座城市。\n然而，日益沉重的责任与无尽压力，意外引发了一场骇人的身体异变，直接威胁到蜘蛛侠的生命，迫使他向“绿巨人”班纳博士寻求帮助。与此同时，多方邪恶势力趁虚而入，纽约再度陷入危机。面对前所未有的强敌，蜘蛛侠能否绝境破局，完成破茧重生？",
+        "_source": "merged",
+        "dayAudience": 39383,
+        "daySession": 7304,
+        "zgFilmTotalSales": 1542159900,
+        "mySumBoxDesc": null,
+        "mySumBoxYuan": null,
+        "ratings": {
+          "douban": {
+            "score": 7.8,
+            "votes": 399622,
+            "url": "https://movie.douban.com/subject/36246195/"
+          },
+          "maoyan": {
+            "score": 9.4,
+            "votes": null,
+            "url": "https://m.maoyan.com/films/1490607"
+          }
+        },
+        "intro": "蜘蛛侠全新力作《蜘蛛侠：崭新之日》重磅回归，开启史诗新篇章！\n彼得·帕克自愿让全世界遗忘自己，转眼已是四年。失去挚友、挚爱与亲人的陪伴，他独自重返街头，以全职蜘蛛侠的身份坚守使命，守护整座城市。\n然而，日益沉重的责任与无尽压力，意外引发了一场骇人的身体异变，直接威胁到蜘蛛侠的生命，迫使他向“绿巨人”班纳博士寻求帮助。与此同时，多方邪恶势力趁虚而入，纽约再度陷入危机。面对前所未有的强敌，蜘蛛侠能否绝境破局，完成破茧重生？",
+        "intro_source": "猫眼"
+      },
+      {
+        "rank": 5,
+        "name": "八仙！",
+        "movieId": "1525868",
+        "daySalesWan": 166.1,
+        "daySalesYuan": 1661000,
+        "totalBoxDesc": "18.47亿",
+        "totalBoxYuan": 1847000000,
+        "boxRate": 6.9,
+        "showRate": 10.5,
+        "seatRate": 9.1,
+        "releaseDays": "上映46天",
+        "poster": "https://p0.pipi.cn/mediaplus/friday_image_fe/e42958b777e14dc8beb24efa367ca77fadc00.jpg?imageMogr2/quality/80",
+        "category": "神话,喜剧,冒险,动画",
+        "releaseDate": "2026-07-18",
+        "summary": "2026年暑期档必看动画奇幻巨制，国民喜剧大片！影片以家喻户晓的传统民间故事“八仙过海”为灵感进行创作，金牌班底脑洞大开，蓬莱仙境上演凡人斗神仙精彩好戏，组团观影共赴好运之约！\n“八仙”在成仙和成功之间选择了“成团”，在搞钱和搞事业之间选择了“搞事情”？！吕洞宾、钟离权带队，集结何仙姑、铁拐李、韩湘子、曹国舅、蓝采和与张果老，八个身份各异的凡人因不同机缘稀里糊涂凑在了蓬莱仙境，有人临时起意有人开团秒跟，开起道观过足了“神仙”瘾！面对蓬莱百姓主打一个“有求必应”，草台班子的外壳下却暗藏着“瞒天过海”的胆识。怎料一个惊天阴谋正悄咪咪朝他们砸过来，这场啼笑皆非的奇幻之旅，最终会走向何处呢？",
+        "_source": "merged",
+        "dayAudience": 46027,
+        "daySession": 13487,
+        "zgFilmTotalSales": 1847987300,
+        "mySumBoxDesc": null,
+        "mySumBoxYuan": null,
+        "ratings": {
+          "douban": {
+            "score": 8.2,
+            "votes": 409366,
+            "url": "https://movie.douban.com/subject/36882191/"
+          },
+          "maoyan": {
+            "score": 9.7,
+            "votes": null,
+            "url": "https://m.maoyan.com/films/1525868"
+          }
+        },
+        "intro": "2026年暑期档必看动画奇幻巨制，国民喜剧大片！影片以家喻户晓的传统民间故事“八仙过海”为灵感进行创作，金牌班底脑洞大开，蓬莱仙境上演凡人斗神仙精彩好戏，组团观影共赴好运之约！\n“八仙”在成仙和成功之间选择了“成团”，在搞钱和搞事业之间选择了“搞事情”？！吕洞宾、钟离权带队，集结何仙姑、铁拐李、韩湘子、曹国舅、蓝采和与张果老，八个身份各异的凡人因不同机缘稀里糊涂凑在了蓬莱仙境，有人临时起意有人开团秒跟，开起道观过足了“神仙”瘾！面对蓬莱百姓主打一个“有求必应”，草台班子的外壳下却暗藏着“瞒天过海”的胆识。怎料一个惊天阴谋正悄咪咪朝他们砸过来，这场啼笑皆非的奇幻之旅，最终会走向何处呢？",
+        "intro_source": "猫眼"
+      },
+      {
+        "rank": 6,
+        "name": "痴迷",
+        "movieId": "1587931",
+        "daySalesWan": 75.28,
+        "daySalesYuan": 752800,
+        "totalBoxDesc": "2.15亿",
+        "totalBoxYuan": 215000000,
+        "boxRate": 3.1,
+        "showRate": 2.7,
+        "seatRate": 2.2,
+        "releaseDays": "上映40天",
+        "poster": "https://p0.pipi.cn/mediaplus/friday_image_fe/e42958b78015c2ea403cbc5a590947f64d171.jpg?imageMogr2/quality/80",
+        "category": "惊悚,爱情",
+        "releaseDate": "2026-07-24",
+        "summary": "性格孤僻的小镇青年贝尔苦苦暗恋女神妮基却怯于表白。他在一家商店意外获得神秘许愿道具 “一愿柳”，折断柳条许下 “让妮基爱我胜过世上所有人” 的愿望。愿望成真后，妮基却逐渐失控，变得痴缠癫狂，对贝尔产生窒息般的控制欲，身体、人格与理智接连崩塌。这场强求来的 “爱情” 暗藏致命代价，将贝尔拖入万劫不复的深渊。",
+        "_source": "merged",
+        "dayAudience": 18006,
+        "daySession": 3164,
+        "zgFilmTotalSales": 215772900,
+        "mySumBoxDesc": null,
+        "mySumBoxYuan": null,
+        "ratings": {
+          "maoyan": {
+            "score": 9.0,
+            "votes": null,
+            "url": "https://m.maoyan.com/films/1587931"
+          }
+        },
+        "intro": "性格孤僻的小镇青年贝尔苦苦暗恋女神妮基却怯于表白。他在一家商店意外获得神秘许愿道具 “一愿柳”，折断柳条许下 “让妮基爱我胜过世上所有人” 的愿望。愿望成真后，妮基却逐渐失控，变得痴缠癫狂，对贝尔产生窒息般的控制欲，身体、人格与理智接连崩塌。这场强求来的 “爱情” 暗藏致命代价，将贝尔拖入万劫不复的深渊。",
+        "intro_source": "猫眼"
+      },
+      {
+        "rank": 7,
+        "name": "肖申克的救赎",
+        "movieId": "1297",
+        "daySalesWan": 52.84,
+        "daySalesYuan": 528400,
+        "totalBoxDesc": "1314.0万",
+        "totalBoxYuan": 13140000,
+        "boxRate": 2.2,
+        "showRate": 2.9,
+        "seatRate": 2.3,
+        "releaseDays": "上映5天",
+        "poster": "https://p0.pipi.cn/mediaplus/bigdata_mmdb_mmdbtask/e42958bf6e39a13de23de206a77aca44a93d4.jpg?imageMogr2/thumbnail/2500x2500%3E",
+        "category": "剧情,犯罪",
+        "releaseDate": "2026-08-28",
+        "summary": "一场谋杀案使银行家安迪（蒂姆•罗宾斯 Tim Robbins 饰）蒙冤入狱，谋杀妻子及其情人的指控将囚禁他终生。在肖申克监狱的首次现身就让监狱“大哥”瑞德（摩根•弗里曼 Morgan Freeman 饰）对他另眼相看。瑞德帮助他搞到一把石锤和一幅女明星海报，两人渐成患难 之交。很快，安迪在监狱里大显其才，担当监狱图书管理员，并利用自己的金融知识帮助监狱官避税，引起了典狱长的注意，被招致麾下帮助典狱长洗黑钱。偶然一次，他得知一名新入狱的小偷能够作证帮他洗脱谋杀罪。燃起一丝希望的安迪找到了典狱长，希望他能帮自己翻案。阴险伪善的狱长假装答应安迪，背后却派人杀死小偷，让他唯一能合法出狱的希望泯灭。沮丧的安迪并没有绝望，在一个电闪雷鸣的风雨夜，一场暗藏几十年的越狱计划让他自我救赎，重获自由！老朋友瑞德在他的鼓舞和帮助下，也勇敢地奔向自由。",
+        "_source": "merged",
+        "dayAudience": 13335,
+        "daySession": 4777,
+        "zgFilmTotalSales": 13258800,
+        "mySumBoxDesc": null,
+        "mySumBoxYuan": null,
+        "ratings": {
+          "maoyan": {
+            "score": 9.8,
+            "votes": null,
+            "url": "https://m.maoyan.com/films/1297"
+          }
+        },
+        "intro": "一场谋杀案使银行家安迪（蒂姆•罗宾斯 Tim Robbins 饰）蒙冤入狱，谋杀妻子及其情人的指控将囚禁他终生。在肖申克监狱的首次现身就让监狱“大哥”瑞德（摩根•弗里曼 Morgan Freeman 饰）对他另眼相看。瑞德帮助他搞到一把石锤和一幅女明星海报，两人渐成患难 之交。很快，安迪在监狱里大显其才，担当监狱图书管理员，并利用自己的金融知识帮助监狱官避税，引起了典狱长的注意，被招致麾下帮助典狱长洗黑钱。偶然一次，他得知一名新入狱的小偷能够作证帮他洗脱谋杀罪。燃起一丝希望的安迪找到了典狱长，希望他能帮自己翻案。阴险伪善的狱长假装答应安迪，背后却派人杀死小偷，让他唯一能合法出狱的希望泯灭。沮丧的安迪并没有绝望，在一个电闪雷鸣的风雨夜，一场暗藏几十年的越狱计划让他自我救赎，重获自由！老朋友瑞德在他的鼓舞和帮助下，也勇敢地奔向自由。",
+        "intro_source": "猫眼"
+      },
+      {
+        "rank": 8,
+        "name": "去你的岛",
+        "movieId": "1375786",
+        "daySalesWan": 45.14,
+        "daySalesYuan": 451400,
+        "totalBoxDesc": "1.60亿",
+        "totalBoxYuan": 160000000,
+        "boxRate": 1.8,
+        "showRate": 3.6,
+        "seatRate": 2.7,
+        "releaseDays": "上映26天",
+        "poster": "https://p0.pipi.cn/mediaplus/friday_image_fe/e42958bf3d6e325be715d5e0cd579fa57200d.jpg?imageMogr2/quality/80",
+        "category": "动画,爱情,奇幻",
+        "releaseDate": "2026-08-07",
+        "summary": "都市女孩王结香被一只千纸鹤带入奇幻小岛，为逃离此地，她与化身为软萌兔子的失忆前男友殷显结伴踏上闯关冒险的旅途。二人在异世界的轮回中重新直面过往的遗憾，完成了双向的救赎与和解。影片融合现实与幻想的双重叙事，在奇幻冒险外壳下包裹着当代年轻人对爱情、遗憾、成长与和解的深层情绪共鸣。影片改编自晋江文学城番大王原著小说《去你的岛》。",
+        "_source": "merged",
+        "dayAudience": 13472,
+        "daySession": 4498,
+        "zgFilmTotalSales": 160333500,
+        "mySumBoxDesc": null,
+        "mySumBoxYuan": null,
+        "ratings": {
+          "maoyan": {
+            "score": 9.4,
+            "votes": null,
+            "url": "https://m.maoyan.com/films/1375786"
+          }
+        },
+        "intro": "都市女孩王结香被一只千纸鹤带入奇幻小岛，为逃离此地，她与化身为软萌兔子的失忆前男友殷显结伴踏上闯关冒险的旅途。二人在异世界的轮回中重新直面过往的遗憾，完成了双向的救赎与和解。影片融合现实与幻想的双重叙事，在奇幻冒险外壳下包裹着当代年轻人对爱情、遗憾、成长与和解的深层情绪共鸣。影片改编自晋江文学城番大王原著小说《去你的岛》。",
+        "intro_source": "猫眼"
+      },
+      {
+        "rank": 9,
+        "name": "燃烧吧！爸爸",
+        "movieId": "1552177",
+        "daySalesWan": 29.58,
+        "daySalesYuan": 295800,
+        "totalBoxDesc": "29.5万",
+        "totalBoxYuan": 295000,
+        "boxRate": 1.2,
+        "showRate": 0.1,
+        "seatRate": 0.1,
+        "releaseDays": "点映",
+        "poster": "https://p0.pipi.cn/mediaplus/friday_image_fe/e42958bf8455c29fd1c8be0724f19473491b5.jpg?imageMogr2/quality/80",
+        "category": "剧情,喜剧",
+        "releaseDate": "2026-09-05",
+        "summary": "顾立言（文淇 饰）与妈妈吴开蒂（倪虹洁 饰）面临至亲离别，追忆欢愉往昔，亦要面对遭逢变故后的各自成长。\n即将大学毕业的顾立言（文淇 饰）与精明伶俐的母亲吴开蒂（倪虹洁 饰）关系微妙，随着父亲顾卫星（喻恩泰 饰）的久病离世，二人一边应对繁琐未知的丧葬流程，一边发现父亲的另外一面人生。这对性格迥异的母女在各类啼笑皆非又荒诞抓马的事件中彼此了解，也更懂得那个处处为二人着想的父亲。",
+        "_source": "merged",
+        "dayAudience": 1659,
+        "daySession": 6,
+        "zgFilmTotalSales": 420900,
+        "mySumBoxDesc": null,
+        "mySumBoxYuan": null,
+        "ratings": {},
+        "intro": "顾立言（文淇 饰）与妈妈吴开蒂（倪虹洁 饰）面临至亲离别，追忆欢愉往昔，亦要面对遭逢变故后的各自成长。\n即将大学毕业的顾立言（文淇 饰）与精明伶俐的母亲吴开蒂（倪虹洁 饰）关系微妙，随着父亲顾卫星（喻恩泰 饰）的久病离世，二人一边应对繁琐未知的丧葬流程，一边发现父亲的另外一面人生。这对性格迥异的母女在各类啼笑皆非又荒诞抓马的事件中彼此了解，也更懂得那个处处为二人着想的父亲。",
+        "intro_source": "猫眼"
+      },
+      {
+        "rank": 10,
+        "name": "密档",
+        "movieId": "1365174",
+        "daySalesWan": 26.99,
+        "daySalesYuan": 269900,
+        "totalBoxDesc": "453.5万",
+        "totalBoxYuan": 4535000,
+        "boxRate": 1.1,
+        "showRate": 1.1,
+        "seatRate": 0.8,
+        "releaseDays": "上映5天",
+        "poster": "https://p0.pipi.cn/mediaplus/friday_image_fe/e42958bff87051f87b3e79446a31130610a99.jpg?imageMogr2/quality/80",
+        "category": "剧情,悬疑",
+        "releaseDate": "2026-08-28",
+        "summary": "电影《密档》以纪实还原性手法，讲述了守护我党机密档案的故事，由郑大圣执导。1942 年上海沦陷，风雨如晦，小沙渡路五十二号石库门深宅，悄然藏纳整批我党机要卷宗。日伪窥伺林立，周遭敌我难辨，方寸院落，处处暗藏生死危局。地下党员徐书亭（袁弘 饰）与妻子沈玉琳（李妍锡 饰）临危受命，隐于市井人海，恰如沧海滴水，在颠沛乱世中以身赴险，用生命守护希望的火种。",
+        "_source": "merged",
+        "dayAudience": 6819,
+        "daySession": 1104,
+        "zgFilmTotalSales": 4769100,
+        "mySumBoxDesc": null,
+        "mySumBoxYuan": null,
+        "ratings": {
+          "douban": {
+            "score": 6.6,
+            "votes": 2067,
+            "url": "https://movie.douban.com/subject/35209727/"
+          }
+        },
+        "intro": "电影《密档》以纪实还原性手法，讲述了守护我党机密档案的故事，由郑大圣执导。1942 年上海沦陷，风雨如晦，小沙渡路五十二号石库门深宅，悄然藏纳整批我党机要卷宗。日伪窥伺林立，周遭敌我难辨，方寸院落，处处暗藏生死危局。地下党员徐书亭（袁弘 饰）与妻子沈玉琳（李妍锡 饰）临危受命，隐于市井人海，恰如沧海滴水，在颠沛乱世中以身赴险，用生命守护希望的火种。",
+        "intro_source": "猫眼"
+      }
+    ]
+  },
+  "yearly": {
+    "year": 2026,
+    "note": "近似口径：取在映影片累计总票房排序前十，非严格年度（含跨年上映影片的历史累计）。",
+    "list": [
+      {
+        "rank": 1,
+        "name": "欢迎来龙餐馆",
+        "movieId": "1462628",
+        "daySalesWan": 725.92,
+        "daySalesYuan": 7259200,
+        "totalBoxDesc": "19.58亿",
+        "totalBoxYuan": 1957999999,
+        "boxRate": 30.3,
+        "showRate": 32.4,
+        "seatRate": 38.3,
+        "releaseDays": "上映22天",
+        "poster": "https://p0.pipi.cn/mediaplus/friday_image_fe/e42958bf15d77e374c8014b14e835a8b1f345.jpg?imageMogr2/quality/80",
+        "category": "剧情,战争",
+        "releaseDate": "2026-08-11",
+        "summary": "含腾量100%！ 是熟悉的沈腾，也是从未见过的沈腾！\n颠覆式演绎东北大厨闯荡乱世\n《我不是药神》导演文牧野首部美食反战大片，手搓式匠心！\n“好好吃饭”四个字，说出口是关怀，吃进嘴是安稳。有爱有和平！\n\n东北大厨徐福（沈腾 饰）为养家还债，扛着炒锅跑去中东一家中餐馆做厨师。他亮出龙抬头、拔丝地瓜、宫保鸡丁等各色中华美食，和前台经理马俊生（蒋奇明 饰）一个掌勺一个揽客，愣是把无人问津的龙餐馆经营得风生水起！然而战争突然爆发，当地局势急转直下。乱世之中，各方势力轮番登场，徐福的命运将会何去何从？战火中的龙餐馆又将如何维系？\n\n正宗中国味，征服世界胃！\n地道龙餐馆，满满人情味！",
+        "_source": "merged",
+        "dayAudience": 204425,
+        "daySession": 46995,
+        "zgFilmTotalSales": 1959080100,
+        "mySumBoxDesc": null,
+        "mySumBoxYuan": null,
+        "ratings": {
+          "douban": {
+            "score": 8.7,
+            "votes": 613867,
+            "url": "https://movie.douban.com/subject/35811064/"
+          },
+          "maoyan": {
+            "score": 9.7,
+            "votes": null,
+            "url": "https://m.maoyan.com/films/1462628"
+          }
+        },
+        "intro": "含腾量100%！ 是熟悉的沈腾，也是从未见过的沈腾！\n颠覆式演绎东北大厨闯荡乱世\n《我不是药神》导演文牧野首部美食反战大片，手搓式匠心！\n“好好吃饭”四个字，说出口是关怀，吃进嘴是安稳。有爱有和平！\n\n东北大厨徐福（沈腾 饰）为养家还债，扛着炒锅跑去中东一家中餐馆做厨师。他亮出龙抬头、拔丝地瓜、宫保鸡丁等各色中华美食，和前台经理马俊生（蒋奇明 饰）一个掌勺一个揽客，愣是把无人问津的龙餐馆经营得风生水起！然而战争突然爆发，当地局势急转直下。乱世之中，各方势力轮番登场，徐福的命运将会何去何从？战火中的龙餐馆又将如何维系？\n\n正宗中国味，征服世界胃！\n地道龙餐馆，满满人情味！",
+        "intro_source": "猫眼"
+      },
+      {
+        "rank": 2,
+        "name": "八仙！",
+        "movieId": "1525868",
+        "daySalesWan": 166.1,
+        "daySalesYuan": 1661000,
+        "totalBoxDesc": "18.47亿",
+        "totalBoxYuan": 1847000000,
+        "boxRate": 6.9,
+        "showRate": 10.5,
+        "seatRate": 9.1,
+        "releaseDays": "上映46天",
+        "poster": "https://p0.pipi.cn/mediaplus/friday_image_fe/e42958b777e14dc8beb24efa367ca77fadc00.jpg?imageMogr2/quality/80",
+        "category": "神话,喜剧,冒险,动画",
+        "releaseDate": "2026-07-18",
+        "summary": "2026年暑期档必看动画奇幻巨制，国民喜剧大片！影片以家喻户晓的传统民间故事“八仙过海”为灵感进行创作，金牌班底脑洞大开，蓬莱仙境上演凡人斗神仙精彩好戏，组团观影共赴好运之约！\n“八仙”在成仙和成功之间选择了“成团”，在搞钱和搞事业之间选择了“搞事情”？！吕洞宾、钟离权带队，集结何仙姑、铁拐李、韩湘子、曹国舅、蓝采和与张果老，八个身份各异的凡人因不同机缘稀里糊涂凑在了蓬莱仙境，有人临时起意有人开团秒跟，开起道观过足了“神仙”瘾！面对蓬莱百姓主打一个“有求必应”，草台班子的外壳下却暗藏着“瞒天过海”的胆识。怎料一个惊天阴谋正悄咪咪朝他们砸过来，这场啼笑皆非的奇幻之旅，最终会走向何处呢？",
+        "_source": "merged",
+        "dayAudience": 46027,
+        "daySession": 13487,
+        "zgFilmTotalSales": 1847987300,
+        "mySumBoxDesc": null,
+        "mySumBoxYuan": null,
+        "ratings": {
+          "douban": {
+            "score": 8.2,
+            "votes": 409366,
+            "url": "https://movie.douban.com/subject/36882191/"
+          },
+          "maoyan": {
+            "score": 9.7,
+            "votes": null,
+            "url": "https://m.maoyan.com/films/1525868"
+          }
+        },
+        "intro": "2026年暑期档必看动画奇幻巨制，国民喜剧大片！影片以家喻户晓的传统民间故事“八仙过海”为灵感进行创作，金牌班底脑洞大开，蓬莱仙境上演凡人斗神仙精彩好戏，组团观影共赴好运之约！\n“八仙”在成仙和成功之间选择了“成团”，在搞钱和搞事业之间选择了“搞事情”？！吕洞宾、钟离权带队，集结何仙姑、铁拐李、韩湘子、曹国舅、蓝采和与张果老，八个身份各异的凡人因不同机缘稀里糊涂凑在了蓬莱仙境，有人临时起意有人开团秒跟，开起道观过足了“神仙”瘾！面对蓬莱百姓主打一个“有求必应”，草台班子的外壳下却暗藏着“瞒天过海”的胆识。怎料一个惊天阴谋正悄咪咪朝他们砸过来，这场啼笑皆非的奇幻之旅，最终会走向何处呢？",
+        "intro_source": "猫眼"
+      },
+      {
+        "rank": 3,
+        "name": "蜘蛛侠：崭新之日",
+        "movieId": "1490607",
+        "daySalesWan": 178.13,
+        "daySalesYuan": 1781300,
+        "totalBoxDesc": "15.41亿",
+        "totalBoxYuan": 1541000000,
+        "boxRate": 7.4,
+        "showRate": 6,
+        "seatRate": 5,
+        "releaseDays": "上映35天",
+        "poster": "https://p0.pipi.cn/mediaplus/friday_image_fe/e42958b7f8777e82bfd7e46fd331949d6e371.jpeg?imageMogr2/quality/80",
+        "category": "动作,冒险",
+        "releaseDate": "2026-07-29",
+        "summary": "蜘蛛侠全新力作《蜘蛛侠：崭新之日》重磅回归，开启史诗新篇章！\n彼得·帕克自愿让全世界遗忘自己，转眼已是四年。失去挚友、挚爱与亲人的陪伴，他独自重返街头，以全职蜘蛛侠的身份坚守使命，守护整座城市。\n然而，日益沉重的责任与无尽压力，意外引发了一场骇人的身体异变，直接威胁到蜘蛛侠的生命，迫使他向“绿巨人”班纳博士寻求帮助。与此同时，多方邪恶势力趁虚而入，纽约再度陷入危机。面对前所未有的强敌，蜘蛛侠能否绝境破局，完成破茧重生？",
+        "_source": "merged",
+        "dayAudience": 39383,
+        "daySession": 7304,
+        "zgFilmTotalSales": 1542159900,
+        "mySumBoxDesc": null,
+        "mySumBoxYuan": null,
+        "ratings": {
+          "douban": {
+            "score": 7.8,
+            "votes": 399622,
+            "url": "https://movie.douban.com/subject/36246195/"
+          },
+          "maoyan": {
+            "score": 9.4,
+            "votes": null,
+            "url": "https://m.maoyan.com/films/1490607"
+          }
+        },
+        "intro": "蜘蛛侠全新力作《蜘蛛侠：崭新之日》重磅回归，开启史诗新篇章！\n彼得·帕克自愿让全世界遗忘自己，转眼已是四年。失去挚友、挚爱与亲人的陪伴，他独自重返街头，以全职蜘蛛侠的身份坚守使命，守护整座城市。\n然而，日益沉重的责任与无尽压力，意外引发了一场骇人的身体异变，直接威胁到蜘蛛侠的生命，迫使他向“绿巨人”班纳博士寻求帮助。与此同时，多方邪恶势力趁虚而入，纽约再度陷入危机。面对前所未有的强敌，蜘蛛侠能否绝境破局，完成破茧重生？",
+        "intro_source": "猫眼"
+      },
+      {
+        "rank": 4,
+        "name": "奥德赛",
+        "movieId": "1545360",
+        "daySalesWan": 465.89,
+        "daySalesYuan": 4658900,
+        "totalBoxDesc": "6.07亿",
+        "totalBoxYuan": 607000000,
+        "boxRate": 19.4,
+        "showRate": 6.2,
+        "seatRate": 8.2,
+        "releaseDays": "上映19天",
+        "poster": "https://p0.pipi.cn/mediaplus/friday_image_fe/e42958b7bf877e82bf4ea94b3f71a8b7fea1c.JPG?imageMogr2/quality/80",
+        "category": "动作,历史,冒险,奇幻",
+        "releaseDate": "2026-08-14",
+        "summary": "《奥德赛》讲述特洛伊战争后，伊萨卡国王奥德修斯率部归家，途中历经风暴、怪物与神祇考验，漂泊十年。与此同时，其妻珀涅罗珀与幼子忒勒玛科斯在家乡应对众多求婚者的胁迫与阴谋。全片采用两条叙事线索并行，最终聚焦奥德修斯重返家园后的身份考验与道德审判，呈现一场关于生存、忠诚与归乡的史诗。",
+        "_source": "merged",
+        "dayAudience": 80881,
+        "daySession": 12252,
+        "zgFilmTotalSales": 613424000,
+        "mySumBoxDesc": null,
+        "mySumBoxYuan": null,
+        "ratings": {
+          "douban": {
+            "score": 8.6,
+            "votes": 446847,
+            "url": "https://movie.douban.com/subject/36808876/"
+          },
+          "maoyan": {
+            "score": 9.5,
+            "votes": null,
+            "url": "https://m.maoyan.com/films/1545360"
+          }
+        },
+        "intro": "《奥德赛》讲述特洛伊战争后，伊萨卡国王奥德修斯率部归家，途中历经风暴、怪物与神祇考验，漂泊十年。与此同时，其妻珀涅罗珀与幼子忒勒玛科斯在家乡应对众多求婚者的胁迫与阴谋。全片采用两条叙事线索并行，最终聚焦奥德修斯重返家园后的身份考验与道德审判，呈现一场关于生存、忠诚与归乡的史诗。",
+        "intro_source": "猫眼"
+      },
+      {
+        "rank": 5,
+        "name": "空枪",
+        "movieId": "1595625",
+        "daySalesWan": 549.46,
+        "daySalesYuan": 5494600,
+        "totalBoxDesc": "4.26亿",
+        "totalBoxYuan": 426000000,
+        "boxRate": 22.9,
+        "showRate": 18.5,
+        "seatRate": 18.6,
+        "releaseDays": "上映14天",
+        "poster": "https://p0.pipi.cn/mediaplus/friday_image_fe/e42958bf8d3e32fa46c735b4d294ad4ea03ec.jpeg?imageMogr2/quality/80",
+        "category": "剧情,犯罪",
+        "releaseDate": "2026-08-19",
+        "summary": "最“狠”的时代！最“黄金”的阵容！明暗交锋，强爽上头！ \n本片故事为虚构。90年代初，这座“遍地黄金”的欲望之城，秩序崩坏，犯罪丛生。打工仔万梓强（朱一龙 饰）一心想改写命运，在结识空姐骆嘉苑（卫诗雅 饰）后，两人联手作案，劫取巨额钱款，这次得手让万梓强愈发疯狂，也将他与富商陈辉延（梁家辉 饰）推向了更深的角力漩涡中。与此同时，内地警察亓宏刚（檀健次 饰）和香港警察关苏辰（李施嬅 饰）坚持对万梓强进行调查，两地警方联手行动，正邪较量一触即发。\n",
+        "_source": "merged",
+        "dayAudience": 154910,
+        "daySession": 31495,
+        "zgFilmTotalSales": 427064800,
+        "mySumBoxDesc": null,
+        "mySumBoxYuan": null,
+        "ratings": {
+          "douban": {
+            "score": 7.2,
+            "votes": 108815,
+            "url": "https://movie.douban.com/subject/37508847/"
+          },
+          "maoyan": {
+            "score": 9.6,
+            "votes": null,
+            "url": "https://m.maoyan.com/films/1595625"
+          }
+        },
+        "intro": "最“狠”的时代！最“黄金”的阵容！明暗交锋，强爽上头！ \n本片故事为虚构。90年代初，这座“遍地黄金”的欲望之城，秩序崩坏，犯罪丛生。打工仔万梓强（朱一龙 饰）一心想改写命运，在结识空姐骆嘉苑（卫诗雅 饰）后，两人联手作案，劫取巨额钱款，这次得手让万梓强愈发疯狂，也将他与富商陈辉延（梁家辉 饰）推向了更深的角力漩涡中。与此同时，内地警察亓宏刚（檀健次 饰）和香港警察关苏辰（李施嬅 饰）坚持对万梓强进行调查，两地警方联手行动，正邪较量一触即发。",
+        "intro_source": "猫眼"
+      },
+      {
+        "rank": 6,
+        "name": "痴迷",
+        "movieId": "1587931",
+        "daySalesWan": 75.28,
+        "daySalesYuan": 752800,
+        "totalBoxDesc": "2.15亿",
+        "totalBoxYuan": 215000000,
+        "boxRate": 3.1,
+        "showRate": 2.7,
+        "seatRate": 2.2,
+        "releaseDays": "上映40天",
+        "poster": "https://p0.pipi.cn/mediaplus/friday_image_fe/e42958b78015c2ea403cbc5a590947f64d171.jpg?imageMogr2/quality/80",
+        "category": "惊悚,爱情",
+        "releaseDate": "2026-07-24",
+        "summary": "性格孤僻的小镇青年贝尔苦苦暗恋女神妮基却怯于表白。他在一家商店意外获得神秘许愿道具 “一愿柳”，折断柳条许下 “让妮基爱我胜过世上所有人” 的愿望。愿望成真后，妮基却逐渐失控，变得痴缠癫狂，对贝尔产生窒息般的控制欲，身体、人格与理智接连崩塌。这场强求来的 “爱情” 暗藏致命代价，将贝尔拖入万劫不复的深渊。",
+        "_source": "merged",
+        "dayAudience": 18006,
+        "daySession": 3164,
+        "zgFilmTotalSales": 215772900,
+        "mySumBoxDesc": null,
+        "mySumBoxYuan": null,
+        "ratings": {
+          "maoyan": {
+            "score": 9.0,
+            "votes": null,
+            "url": "https://m.maoyan.com/films/1587931"
+          }
+        },
+        "intro": "性格孤僻的小镇青年贝尔苦苦暗恋女神妮基却怯于表白。他在一家商店意外获得神秘许愿道具 “一愿柳”，折断柳条许下 “让妮基爱我胜过世上所有人” 的愿望。愿望成真后，妮基却逐渐失控，变得痴缠癫狂，对贝尔产生窒息般的控制欲，身体、人格与理智接连崩塌。这场强求来的 “爱情” 暗藏致命代价，将贝尔拖入万劫不复的深渊。",
+        "intro_source": "猫眼"
+      },
+      {
+        "rank": 7,
+        "name": "去你的岛",
+        "movieId": "1375786",
+        "daySalesWan": 45.14,
+        "daySalesYuan": 451400,
+        "totalBoxDesc": "1.60亿",
+        "totalBoxYuan": 160000000,
+        "boxRate": 1.8,
+        "showRate": 3.6,
+        "seatRate": 2.7,
+        "releaseDays": "上映26天",
+        "poster": "https://p0.pipi.cn/mediaplus/friday_image_fe/e42958bf3d6e325be715d5e0cd579fa57200d.jpg?imageMogr2/quality/80",
+        "category": "动画,爱情,奇幻",
+        "releaseDate": "2026-08-07",
+        "summary": "都市女孩王结香被一只千纸鹤带入奇幻小岛，为逃离此地，她与化身为软萌兔子的失忆前男友殷显结伴踏上闯关冒险的旅途。二人在异世界的轮回中重新直面过往的遗憾，完成了双向的救赎与和解。影片融合现实与幻想的双重叙事，在奇幻冒险外壳下包裹着当代年轻人对爱情、遗憾、成长与和解的深层情绪共鸣。影片改编自晋江文学城番大王原著小说《去你的岛》。",
+        "_source": "merged",
+        "dayAudience": 13472,
+        "daySession": 4498,
+        "zgFilmTotalSales": 160333500,
+        "mySumBoxDesc": null,
+        "mySumBoxYuan": null,
+        "ratings": {
+          "maoyan": {
+            "score": 9.4,
+            "votes": null,
+            "url": "https://m.maoyan.com/films/1375786"
+          }
+        },
+        "intro": "都市女孩王结香被一只千纸鹤带入奇幻小岛，为逃离此地，她与化身为软萌兔子的失忆前男友殷显结伴踏上闯关冒险的旅途。二人在异世界的轮回中重新直面过往的遗憾，完成了双向的救赎与和解。影片融合现实与幻想的双重叙事，在奇幻冒险外壳下包裹着当代年轻人对爱情、遗憾、成长与和解的深层情绪共鸣。影片改编自晋江文学城番大王原著小说《去你的岛》。",
+        "intro_source": "猫眼"
+      },
+      {
+        "rank": 8,
+        "name": "肖申克的救赎",
+        "movieId": "1297",
+        "daySalesWan": 52.84,
+        "daySalesYuan": 528400,
+        "totalBoxDesc": "1314.0万",
+        "totalBoxYuan": 13140000,
+        "boxRate": 2.2,
+        "showRate": 2.9,
+        "seatRate": 2.3,
+        "releaseDays": "上映5天",
+        "poster": "https://p0.pipi.cn/mediaplus/bigdata_mmdb_mmdbtask/e42958bf6e39a13de23de206a77aca44a93d4.jpg?imageMogr2/thumbnail/2500x2500%3E",
+        "category": "剧情,犯罪",
+        "releaseDate": "2026-08-28",
+        "summary": "一场谋杀案使银行家安迪（蒂姆•罗宾斯 Tim Robbins 饰）蒙冤入狱，谋杀妻子及其情人的指控将囚禁他终生。在肖申克监狱的首次现身就让监狱“大哥”瑞德（摩根•弗里曼 Morgan Freeman 饰）对他另眼相看。瑞德帮助他搞到一把石锤和一幅女明星海报，两人渐成患难 之交。很快，安迪在监狱里大显其才，担当监狱图书管理员，并利用自己的金融知识帮助监狱官避税，引起了典狱长的注意，被招致麾下帮助典狱长洗黑钱。偶然一次，他得知一名新入狱的小偷能够作证帮他洗脱谋杀罪。燃起一丝希望的安迪找到了典狱长，希望他能帮自己翻案。阴险伪善的狱长假装答应安迪，背后却派人杀死小偷，让他唯一能合法出狱的希望泯灭。沮丧的安迪并没有绝望，在一个电闪雷鸣的风雨夜，一场暗藏几十年的越狱计划让他自我救赎，重获自由！老朋友瑞德在他的鼓舞和帮助下，也勇敢地奔向自由。",
+        "_source": "merged",
+        "dayAudience": 13335,
+        "daySession": 4777,
+        "zgFilmTotalSales": 13258800,
+        "mySumBoxDesc": null,
+        "mySumBoxYuan": null,
+        "ratings": {
+          "maoyan": {
+            "score": 9.8,
+            "votes": null,
+            "url": "https://m.maoyan.com/films/1297"
+          }
+        },
+        "intro": "一场谋杀案使银行家安迪（蒂姆•罗宾斯 Tim Robbins 饰）蒙冤入狱，谋杀妻子及其情人的指控将囚禁他终生。在肖申克监狱的首次现身就让监狱“大哥”瑞德（摩根•弗里曼 Morgan Freeman 饰）对他另眼相看。瑞德帮助他搞到一把石锤和一幅女明星海报，两人渐成患难 之交。很快，安迪在监狱里大显其才，担当监狱图书管理员，并利用自己的金融知识帮助监狱官避税，引起了典狱长的注意，被招致麾下帮助典狱长洗黑钱。偶然一次，他得知一名新入狱的小偷能够作证帮他洗脱谋杀罪。燃起一丝希望的安迪找到了典狱长，希望他能帮自己翻案。阴险伪善的狱长假装答应安迪，背后却派人杀死小偷，让他唯一能合法出狱的希望泯灭。沮丧的安迪并没有绝望，在一个电闪雷鸣的风雨夜，一场暗藏几十年的越狱计划让他自我救赎，重获自由！老朋友瑞德在他的鼓舞和帮助下，也勇敢地奔向自由。",
+        "intro_source": "猫眼"
+      },
+      {
+        "rank": 9,
+        "name": "密档",
+        "movieId": "1365174",
+        "daySalesWan": 26.99,
+        "daySalesYuan": 269900,
+        "totalBoxDesc": "453.5万",
+        "totalBoxYuan": 4535000,
+        "boxRate": 1.1,
+        "showRate": 1.1,
+        "seatRate": 0.8,
+        "releaseDays": "上映5天",
+        "poster": "https://p0.pipi.cn/mediaplus/friday_image_fe/e42958bff87051f87b3e79446a31130610a99.jpg?imageMogr2/quality/80",
+        "category": "剧情,悬疑",
+        "releaseDate": "2026-08-28",
+        "summary": "电影《密档》以纪实还原性手法，讲述了守护我党机密档案的故事，由郑大圣执导。1942 年上海沦陷，风雨如晦，小沙渡路五十二号石库门深宅，悄然藏纳整批我党机要卷宗。日伪窥伺林立，周遭敌我难辨，方寸院落，处处暗藏生死危局。地下党员徐书亭（袁弘 饰）与妻子沈玉琳（李妍锡 饰）临危受命，隐于市井人海，恰如沧海滴水，在颠沛乱世中以身赴险，用生命守护希望的火种。",
+        "_source": "merged",
+        "dayAudience": 6819,
+        "daySession": 1104,
+        "zgFilmTotalSales": 4769100,
+        "mySumBoxDesc": null,
+        "mySumBoxYuan": null,
+        "ratings": {
+          "douban": {
+            "score": 6.6,
+            "votes": 2067,
+            "url": "https://movie.douban.com/subject/35209727/"
+          }
+        },
+        "intro": "电影《密档》以纪实还原性手法，讲述了守护我党机密档案的故事，由郑大圣执导。1942 年上海沦陷，风雨如晦，小沙渡路五十二号石库门深宅，悄然藏纳整批我党机要卷宗。日伪窥伺林立，周遭敌我难辨，方寸院落，处处暗藏生死危局。地下党员徐书亭（袁弘 饰）与妻子沈玉琳（李妍锡 饰）临危受命，隐于市井人海，恰如沧海滴水，在颠沛乱世中以身赴险，用生命守护希望的火种。",
+        "intro_source": "猫眼"
+      },
+      {
+        "rank": 10,
+        "name": "燃烧吧！爸爸",
+        "movieId": "1552177",
+        "daySalesWan": 29.58,
+        "daySalesYuan": 295800,
+        "totalBoxDesc": "29.5万",
+        "totalBoxYuan": 295000,
+        "boxRate": 1.2,
+        "showRate": 0.1,
+        "seatRate": 0.1,
+        "releaseDays": "点映",
+        "poster": "https://p0.pipi.cn/mediaplus/friday_image_fe/e42958bf8455c29fd1c8be0724f19473491b5.jpg?imageMogr2/quality/80",
+        "category": "剧情,喜剧",
+        "releaseDate": "2026-09-05",
+        "summary": "顾立言（文淇 饰）与妈妈吴开蒂（倪虹洁 饰）面临至亲离别，追忆欢愉往昔，亦要面对遭逢变故后的各自成长。\n即将大学毕业的顾立言（文淇 饰）与精明伶俐的母亲吴开蒂（倪虹洁 饰）关系微妙，随着父亲顾卫星（喻恩泰 饰）的久病离世，二人一边应对繁琐未知的丧葬流程，一边发现父亲的另外一面人生。这对性格迥异的母女在各类啼笑皆非又荒诞抓马的事件中彼此了解，也更懂得那个处处为二人着想的父亲。",
+        "_source": "merged",
+        "dayAudience": 1659,
+        "daySession": 6,
+        "zgFilmTotalSales": 420900,
+        "mySumBoxDesc": null,
+        "mySumBoxYuan": null,
+        "ratings": {},
+        "intro": "顾立言（文淇 饰）与妈妈吴开蒂（倪虹洁 饰）面临至亲离别，追忆欢愉往昔，亦要面对遭逢变故后的各自成长。\n即将大学毕业的顾立言（文淇 饰）与精明伶俐的母亲吴开蒂（倪虹洁 饰）关系微妙，随着父亲顾卫星（喻恩泰 饰）的久病离世，二人一边应对繁琐未知的丧葬流程，一边发现父亲的另外一面人生。这对性格迥异的母女在各类啼笑皆非又荒诞抓马的事件中彼此了解，也更懂得那个处处为二人着想的父亲。",
+        "intro_source": "猫眼"
+      }
+    ]
+  },
+  "distribution": {
+    "cities": [
+      {
+        "rank": 1,
+        "name": "上海市",
+        "salesYuan": 2313600,
+        "audience": 37844,
+        "session": 6253
+      },
+      {
+        "rank": 2,
+        "name": "北京市",
+        "salesYuan": 1617400,
+        "audience": 27851,
+        "session": 5610
+      },
+      {
+        "rank": 3,
+        "name": "广州市",
+        "salesYuan": 852800,
+        "audience": 19654,
+        "session": 3615
+      },
+      {
+        "rank": 4,
+        "name": "成都市",
+        "salesYuan": 842200,
+        "audience": 20648,
+        "session": 4075
+      },
+      {
+        "rank": 5,
+        "name": "深圳市",
+        "salesYuan": 773199,
+        "audience": 16142,
+        "session": 3475
+      },
+      {
+        "rank": 6,
+        "name": "重庆市",
+        "salesYuan": 654800,
+        "audience": 16097,
+        "session": 3302
+      },
+      {
+        "rank": 7,
+        "name": "杭州市",
+        "salesYuan": 641500,
+        "audience": 13623,
+        "session": 2864
+      },
+      {
+        "rank": 8,
+        "name": "武汉市",
+        "salesYuan": 610300,
+        "audience": 15999,
+        "session": 2847
+      },
+      {
+        "rank": 9,
+        "name": "南京市",
+        "salesYuan": 434500,
+        "audience": 10561,
+        "session": 2144
+      },
+      {
+        "rank": 10,
+        "name": "苏州市",
+        "salesYuan": 419799,
+        "audience": 10162,
+        "session": 2307
+      }
+    ],
+    "chains": [
+      {
+        "rank": 1,
+        "name": "珠海横琴儒意电影院线有限公司",
+        "salesYuan": 5504000,
+        "audience": 122292,
+        "session": 18939
+      },
+      {
+        "rank": 2,
+        "name": "中影电影院线有限公司",
+        "salesYuan": 2960600,
+        "audience": 76226,
+        "session": 18351
+      },
+      {
+        "rank": 3,
+        "name": "上海联和电影院线公司",
+        "salesYuan": 2511800,
+        "audience": 52307,
+        "session": 9940
+      },
+      {
+        "rank": 4,
+        "name": "深圳市中影南方电影新干线有限公司",
+        "salesYuan": 2129700,
+        "audience": 53633,
+        "session": 11635
+      },
+      {
+        "rank": 5,
+        "name": "江苏幸福蓝海院线有限责任公司",
+        "salesYuan": 1028400,
+        "audience": 26605,
+        "session": 6167
+      },
+      {
+        "rank": 6,
+        "name": "浙江时代电影院线股份有限公司",
+        "salesYuan": 883500,
+        "audience": 23103,
+        "session": 5786
+      },
+      {
+        "rank": 7,
+        "name": "广州金逸珠江电影院线有限公司",
+        "salesYuan": 850400,
+        "audience": 20740,
+        "session": 4218
+      },
+      {
+        "rank": 8,
+        "name": "北京华夏联合电影院线",
+        "salesYuan": 774700,
+        "audience": 20702,
+        "session": 5494
+      },
+      {
+        "rank": 9,
+        "name": "横店影视股份有限公司",
+        "salesYuan": 729000,
+        "audience": 21859,
+        "session": 5912
+      },
+      {
+        "rank": 10,
+        "name": "广东大地电影院线股份有限公司",
+        "salesYuan": 645600,
+        "audience": 19898,
+        "session": 5846
+      }
+    ],
+    "cinemas": [
+      {
+        "rank": 1,
+        "name": "中国电影博物馆",
+        "salesYuan": 205700,
+        "audience": 1388,
+        "session": 17
+      },
+      {
+        "rank": 2,
+        "name": "上海市浦东新区MOViEMOViE影城前滩太古里店",
+        "salesYuan": 150800,
+        "audience": 881,
+        "session": 18
+      },
+      {
+        "rank": 3,
+        "name": "东莞万达影城华南MALL店",
+        "salesYuan": 142200,
+        "audience": 2101,
+        "session": 25
+      },
+      {
+        "rank": 4,
+        "name": "辽宁省科技馆IMAX巨幕影院",
+        "salesYuan": 116100,
+        "audience": 1481,
+        "session": 4
+      },
+      {
+        "rank": 5,
+        "name": "上海市上海影城",
+        "salesYuan": 93100,
+        "audience": 707,
+        "session": 28
+      },
+      {
+        "rank": 6,
+        "name": "上海市黄浦区AI CINEMA影城新天地东台里店",
+        "salesYuan": 73500,
+        "audience": 383,
+        "session": 21
+      },
+      {
+        "rank": 7,
+        "name": "吉林省长春市经开区寰映影城",
+        "salesYuan": 73200,
+        "audience": 1502,
+        "session": 43
+      },
+      {
+        "rank": 8,
+        "name": "上海市闵行区华夏古美影院",
+        "salesYuan": 62500,
+        "audience": 391,
+        "session": 2
+      },
+      {
+        "rank": 9,
+        "name": "上海市浦东新区正大乐影城上海正大广场IMAX店",
+        "salesYuan": 58300,
+        "audience": 494,
+        "session": 15
+      },
+      {
+        "rank": 10,
+        "name": "北京市朝阳区英皇三里屯太古里影院",
+        "salesYuan": 56300,
+        "audience": 541,
+        "session": 34
+      }
+    ]
+  },
+  "trend7": [
+    {
+      "date": "2026-08-26",
+      "boxYuan": 111285600,
+      "audience": 2933181,
+      "session": 304743,
+      "cinemaCount": 12464
+    },
+    {
+      "date": "2026-08-27",
+      "boxYuan": 91047000,
+      "audience": 2430557,
+      "session": 291664,
+      "cinemaCount": 12413
+    },
+    {
+      "date": "2026-08-28",
+      "boxYuan": 119930900,
+      "audience": 3206615,
+      "session": 305827,
+      "cinemaCount": 12497
+    },
+    {
+      "date": "2026-08-29",
+      "boxYuan": 192084000,
+      "audience": 4989103,
+      "session": 338477,
+      "cinemaCount": 12578
+    },
+    {
+      "date": "2026-08-30",
+      "boxYuan": 162465300,
+      "audience": 4245117,
+      "session": 329810,
+      "cinemaCount": 12528
+    },
+    {
+      "date": "2026-08-31",
+      "boxYuan": 65672299,
+      "audience": 1748943,
+      "session": 260650,
+      "cinemaCount": 12300
+    }
+  ],
+  "realtime": {
+    "box": 28033300,
+    "audience": 700579,
+    "session": 148833,
+    "service": 277.15,
+    "businessDay": "2026-09-01"
+  },
+  "day_total": {
+    "box": 24348000,
+    "audience": 604410,
+    "session": 134121,
+    "cinemaCount": 11592
+  },
+  "login_data": {
+    "cinema_available": false,
+    "province_available": false
+  },
+  "movies": {
+    "1462628": {
+      "name": "欢迎来龙餐馆",
+      "movieId": "1462628",
+      "poster": "https://p0.pipi.cn/mediaplus/friday_image_fe/e42958bf15d77e374c8014b14e835a8b1f345.jpg?imageMogr2/quality/80",
+      "category": "剧情,战争",
+      "releaseDate": "2026-08-11",
+      "summary": "含腾量100%！ 是熟悉的沈腾，也是从未见过的沈腾！\n颠覆式演绎东北大厨闯荡乱世\n《我不是药神》导演文牧野首部美食反战大片，手搓式匠心！\n“好好吃饭”四个字，说出口是关怀，吃进嘴是安稳。有爱有和平！\n\n东北大厨徐福（沈腾 饰）为养家还债，扛着炒锅跑去中东一家中餐馆做厨师。他亮出龙抬头、拔丝地瓜、宫保鸡丁等各色中华美食，和前台经理马俊生（蒋奇明 饰）一个掌勺一个揽客，愣是把无人问津的龙餐馆经营得风生水起！然而战争突然爆发，当地局势急转直下。乱世之中，各方势力轮番登场，徐福的命运将会何去何从？战火中的龙餐馆又将如何维系？\n\n正宗中国味，征服世界胃！\n地道龙餐馆，满满人情味！",
+      "duration": "140分钟",
+      "enrich": {
+        "poster": "https://p0.pipi.cn/mediaplus/friday_image_fe/e42958bf15d77e374c8014b14e835a8b1f345.jpg?imageMogr2/quality/80",
+        "category": "剧情,战争",
+        "releaseDate": "2026-08-11",
+        "summary": "含腾量100%！ 是熟悉的沈腾，也是从未见过的沈腾！\n颠覆式演绎东北大厨闯荡乱世\n《我不是药神》导演文牧野首部美食反战大片，手搓式匠心！\n“好好吃饭”四个字，说出口是关怀，吃进嘴是安稳。有爱有和平！\n\n东北大厨徐福（沈腾 饰）为养家还债，扛着炒锅跑去中东一家中餐馆做厨师。他亮出龙抬头、拔丝地瓜、宫保鸡丁等各色中华美食，和前台经理马俊生（蒋奇明 饰）一个掌勺一个揽客，愣是把无人问津的龙餐馆经营得风生水起！然而战争突然爆发，当地局势急转直下。乱世之中，各方势力轮番登场，徐福的命运将会何去何从？战火中的龙餐馆又将如何维系？\n\n正宗中国味，征服世界胃！\n地道龙餐馆，满满人情味！",
+        "duration": "140分钟"
+      }
+    },
+    "1595625": {
+      "name": "空枪",
+      "movieId": "1595625",
+      "poster": "https://p0.pipi.cn/mediaplus/friday_image_fe/e42958bf8d3e32fa46c735b4d294ad4ea03ec.jpeg?imageMogr2/quality/80",
+      "category": "剧情,犯罪",
+      "releaseDate": "2026-08-19",
+      "summary": "最“狠”的时代！最“黄金”的阵容！明暗交锋，强爽上头！ \n本片故事为虚构。90年代初，这座“遍地黄金”的欲望之城，秩序崩坏，犯罪丛生。打工仔万梓强（朱一龙 饰）一心想改写命运，在结识空姐骆嘉苑（卫诗雅 饰）后，两人联手作案，劫取巨额钱款，这次得手让万梓强愈发疯狂，也将他与富商陈辉延（梁家辉 饰）推向了更深的角力漩涡中。与此同时，内地警察亓宏刚（檀健次 饰）和香港警察关苏辰（李施嬅 饰）坚持对万梓强进行调查，两地警方联手行动，正邪较量一触即发。\n",
+      "duration": "160分钟",
+      "enrich": {
+        "poster": "https://p0.pipi.cn/mediaplus/friday_image_fe/e42958bf8d3e32fa46c735b4d294ad4ea03ec.jpeg?imageMogr2/quality/80",
+        "category": "剧情,犯罪",
+        "releaseDate": "2026-08-19",
+        "summary": "最“狠”的时代！最“黄金”的阵容！明暗交锋，强爽上头！ \n本片故事为虚构。90年代初，这座“遍地黄金”的欲望之城，秩序崩坏，犯罪丛生。打工仔万梓强（朱一龙 饰）一心想改写命运，在结识空姐骆嘉苑（卫诗雅 饰）后，两人联手作案，劫取巨额钱款，这次得手让万梓强愈发疯狂，也将他与富商陈辉延（梁家辉 饰）推向了更深的角力漩涡中。与此同时，内地警察亓宏刚（檀健次 饰）和香港警察关苏辰（李施嬅 饰）坚持对万梓强进行调查，两地警方联手行动，正邪较量一触即发。\n",
+        "duration": "160分钟"
+      }
+    },
+    "1545360": {
+      "name": "奥德赛",
+      "movieId": "1545360",
+      "poster": "https://p0.pipi.cn/mediaplus/friday_image_fe/e42958b7bf877e82bf4ea94b3f71a8b7fea1c.JPG?imageMogr2/quality/80",
+      "category": "动作,历史,冒险,奇幻",
+      "releaseDate": "2026-08-14",
+      "summary": "《奥德赛》讲述特洛伊战争后，伊萨卡国王奥德修斯率部归家，途中历经风暴、怪物与神祇考验，漂泊十年。与此同时，其妻珀涅罗珀与幼子忒勒玛科斯在家乡应对众多求婚者的胁迫与阴谋。全片采用两条叙事线索并行，最终聚焦奥德修斯重返家园后的身份考验与道德审判，呈现一场关于生存、忠诚与归乡的史诗。",
+      "duration": "172分钟",
+      "enrich": {
+        "poster": "https://p0.pipi.cn/mediaplus/friday_image_fe/e42958b7bf877e82bf4ea94b3f71a8b7fea1c.JPG?imageMogr2/quality/80",
+        "category": "动作,历史,冒险,奇幻",
+        "releaseDate": "2026-08-14",
+        "summary": "《奥德赛》讲述特洛伊战争后，伊萨卡国王奥德修斯率部归家，途中历经风暴、怪物与神祇考验，漂泊十年。与此同时，其妻珀涅罗珀与幼子忒勒玛科斯在家乡应对众多求婚者的胁迫与阴谋。全片采用两条叙事线索并行，最终聚焦奥德修斯重返家园后的身份考验与道德审判，呈现一场关于生存、忠诚与归乡的史诗。",
+        "duration": "172分钟"
+      }
+    },
+    "1490607": {
+      "name": "蜘蛛侠：崭新之日",
+      "movieId": "1490607",
+      "poster": "https://p0.pipi.cn/mediaplus/friday_image_fe/e42958b7f8777e82bfd7e46fd331949d6e371.jpeg?imageMogr2/quality/80",
+      "category": "动作,冒险",
+      "releaseDate": "2026-07-29",
+      "summary": "蜘蛛侠全新力作《蜘蛛侠：崭新之日》重磅回归，开启史诗新篇章！\n彼得·帕克自愿让全世界遗忘自己，转眼已是四年。失去挚友、挚爱与亲人的陪伴，他独自重返街头，以全职蜘蛛侠的身份坚守使命，守护整座城市。\n然而，日益沉重的责任与无尽压力，意外引发了一场骇人的身体异变，直接威胁到蜘蛛侠的生命，迫使他向“绿巨人”班纳博士寻求帮助。与此同时，多方邪恶势力趁虚而入，纽约再度陷入危机。面对前所未有的强敌，蜘蛛侠能否绝境破局，完成破茧重生？",
+      "duration": "145分钟",
+      "enrich": {
+        "poster": "https://p0.pipi.cn/mediaplus/friday_image_fe/e42958b7f8777e82bfd7e46fd331949d6e371.jpeg?imageMogr2/quality/80",
+        "category": "动作,冒险",
+        "releaseDate": "2026-07-29",
+        "summary": "蜘蛛侠全新力作《蜘蛛侠：崭新之日》重磅回归，开启史诗新篇章！\n彼得·帕克自愿让全世界遗忘自己，转眼已是四年。失去挚友、挚爱与亲人的陪伴，他独自重返街头，以全职蜘蛛侠的身份坚守使命，守护整座城市。\n然而，日益沉重的责任与无尽压力，意外引发了一场骇人的身体异变，直接威胁到蜘蛛侠的生命，迫使他向“绿巨人”班纳博士寻求帮助。与此同时，多方邪恶势力趁虚而入，纽约再度陷入危机。面对前所未有的强敌，蜘蛛侠能否绝境破局，完成破茧重生？",
+        "duration": "145分钟"
+      }
+    },
+    "1525868": {
+      "name": "八仙！",
+      "movieId": "1525868",
+      "poster": "https://p0.pipi.cn/mediaplus/friday_image_fe/e42958b777e14dc8beb24efa367ca77fadc00.jpg?imageMogr2/quality/80",
+      "category": "神话,喜剧,冒险,动画",
+      "releaseDate": "2026-07-18",
+      "summary": "2026年暑期档必看动画奇幻巨制，国民喜剧大片！影片以家喻户晓的传统民间故事“八仙过海”为灵感进行创作，金牌班底脑洞大开，蓬莱仙境上演凡人斗神仙精彩好戏，组团观影共赴好运之约！\n“八仙”在成仙和成功之间选择了“成团”，在搞钱和搞事业之间选择了“搞事情”？！吕洞宾、钟离权带队，集结何仙姑、铁拐李、韩湘子、曹国舅、蓝采和与张果老，八个身份各异的凡人因不同机缘稀里糊涂凑在了蓬莱仙境，有人临时起意有人开团秒跟，开起道观过足了“神仙”瘾！面对蓬莱百姓主打一个“有求必应”，草台班子的外壳下却暗藏着“瞒天过海”的胆识。怎料一个惊天阴谋正悄咪咪朝他们砸过来，这场啼笑皆非的奇幻之旅，最终会走向何处呢？",
+      "duration": "144分钟",
+      "enrich": {
+        "poster": "https://p0.pipi.cn/mediaplus/friday_image_fe/e42958b777e14dc8beb24efa367ca77fadc00.jpg?imageMogr2/quality/80",
+        "category": "神话,喜剧,冒险,动画",
+        "releaseDate": "2026-07-18",
+        "summary": "2026年暑期档必看动画奇幻巨制，国民喜剧大片！影片以家喻户晓的传统民间故事“八仙过海”为灵感进行创作，金牌班底脑洞大开，蓬莱仙境上演凡人斗神仙精彩好戏，组团观影共赴好运之约！\n“八仙”在成仙和成功之间选择了“成团”，在搞钱和搞事业之间选择了“搞事情”？！吕洞宾、钟离权带队，集结何仙姑、铁拐李、韩湘子、曹国舅、蓝采和与张果老，八个身份各异的凡人因不同机缘稀里糊涂凑在了蓬莱仙境，有人临时起意有人开团秒跟，开起道观过足了“神仙”瘾！面对蓬莱百姓主打一个“有求必应”，草台班子的外壳下却暗藏着“瞒天过海”的胆识。怎料一个惊天阴谋正悄咪咪朝他们砸过来，这场啼笑皆非的奇幻之旅，最终会走向何处呢？",
+        "duration": "144分钟"
+      }
+    },
+    "1587931": {
+      "name": "痴迷",
+      "movieId": "1587931",
+      "poster": "https://p0.pipi.cn/mediaplus/friday_image_fe/e42958b78015c2ea403cbc5a590947f64d171.jpg?imageMogr2/quality/80",
+      "category": "惊悚,爱情",
+      "releaseDate": "2026-07-24",
+      "summary": "性格孤僻的小镇青年贝尔苦苦暗恋女神妮基却怯于表白。他在一家商店意外获得神秘许愿道具 “一愿柳”，折断柳条许下 “让妮基爱我胜过世上所有人” 的愿望。愿望成真后，妮基却逐渐失控，变得痴缠癫狂，对贝尔产生窒息般的控制欲，身体、人格与理智接连崩塌。这场强求来的 “爱情” 暗藏致命代价，将贝尔拖入万劫不复的深渊。",
+      "duration": "110分钟",
+      "enrich": {
+        "poster": "https://p0.pipi.cn/mediaplus/friday_image_fe/e42958b78015c2ea403cbc5a590947f64d171.jpg?imageMogr2/quality/80",
+        "category": "惊悚,爱情",
+        "releaseDate": "2026-07-24",
+        "summary": "性格孤僻的小镇青年贝尔苦苦暗恋女神妮基却怯于表白。他在一家商店意外获得神秘许愿道具 “一愿柳”，折断柳条许下 “让妮基爱我胜过世上所有人” 的愿望。愿望成真后，妮基却逐渐失控，变得痴缠癫狂，对贝尔产生窒息般的控制欲，身体、人格与理智接连崩塌。这场强求来的 “爱情” 暗藏致命代价，将贝尔拖入万劫不复的深渊。",
+        "duration": "110分钟"
+      }
+    },
+    "1297": {
+      "name": "肖申克的救赎",
+      "movieId": "1297",
+      "poster": "https://p0.pipi.cn/mediaplus/bigdata_mmdb_mmdbtask/e42958bf6e39a13de23de206a77aca44a93d4.jpg?imageMogr2/thumbnail/2500x2500%3E",
+      "category": "剧情,犯罪",
+      "releaseDate": "2026-08-28",
+      "summary": "一场谋杀案使银行家安迪（蒂姆•罗宾斯 Tim Robbins 饰）蒙冤入狱，谋杀妻子及其情人的指控将囚禁他终生。在肖申克监狱的首次现身就让监狱“大哥”瑞德（摩根•弗里曼 Morgan Freeman 饰）对他另眼相看。瑞德帮助他搞到一把石锤和一幅女明星海报，两人渐成患难 之交。很快，安迪在监狱里大显其才，担当监狱图书管理员，并利用自己的金融知识帮助监狱官避税，引起了典狱长的注意，被招致麾下帮助典狱长洗黑钱。偶然一次，他得知一名新入狱的小偷能够作证帮他洗脱谋杀罪。燃起一丝希望的安迪找到了典狱长，希望他能帮自己翻案。阴险伪善的狱长假装答应安迪，背后却派人杀死小偷，让他唯一能合法出狱的希望泯灭。沮丧的安迪并没有绝望，在一个电闪雷鸣的风雨夜，一场暗藏几十年的越狱计划让他自我救赎，重获自由！老朋友瑞德在他的鼓舞和帮助下，也勇敢地奔向自由。",
+      "duration": "142分钟",
+      "enrich": {
+        "poster": "https://p0.pipi.cn/mediaplus/bigdata_mmdb_mmdbtask/e42958bf6e39a13de23de206a77aca44a93d4.jpg?imageMogr2/thumbnail/2500x2500%3E",
+        "category": "剧情,犯罪",
+        "releaseDate": "2026-08-28",
+        "summary": "一场谋杀案使银行家安迪（蒂姆•罗宾斯 Tim Robbins 饰）蒙冤入狱，谋杀妻子及其情人的指控将囚禁他终生。在肖申克监狱的首次现身就让监狱“大哥”瑞德（摩根•弗里曼 Morgan Freeman 饰）对他另眼相看。瑞德帮助他搞到一把石锤和一幅女明星海报，两人渐成患难 之交。很快，安迪在监狱里大显其才，担当监狱图书管理员，并利用自己的金融知识帮助监狱官避税，引起了典狱长的注意，被招致麾下帮助典狱长洗黑钱。偶然一次，他得知一名新入狱的小偷能够作证帮他洗脱谋杀罪。燃起一丝希望的安迪找到了典狱长，希望他能帮自己翻案。阴险伪善的狱长假装答应安迪，背后却派人杀死小偷，让他唯一能合法出狱的希望泯灭。沮丧的安迪并没有绝望，在一个电闪雷鸣的风雨夜，一场暗藏几十年的越狱计划让他自我救赎，重获自由！老朋友瑞德在他的鼓舞和帮助下，也勇敢地奔向自由。",
+        "duration": "142分钟"
+      }
+    },
+    "1375786": {
+      "name": "去你的岛",
+      "movieId": "1375786",
+      "poster": "https://p0.pipi.cn/mediaplus/friday_image_fe/e42958bf3d6e325be715d5e0cd579fa57200d.jpg?imageMogr2/quality/80",
+      "category": "动画,爱情,奇幻",
+      "releaseDate": "2026-08-07",
+      "summary": "都市女孩王结香被一只千纸鹤带入奇幻小岛，为逃离此地，她与化身为软萌兔子的失忆前男友殷显结伴踏上闯关冒险的旅途。二人在异世界的轮回中重新直面过往的遗憾，完成了双向的救赎与和解。影片融合现实与幻想的双重叙事，在奇幻冒险外壳下包裹着当代年轻人对爱情、遗憾、成长与和解的深层情绪共鸣。影片改编自晋江文学城番大王原著小说《去你的岛》。",
+      "duration": "119分钟",
+      "enrich": {
+        "poster": "https://p0.pipi.cn/mediaplus/friday_image_fe/e42958bf3d6e325be715d5e0cd579fa57200d.jpg?imageMogr2/quality/80",
+        "category": "动画,爱情,奇幻",
+        "releaseDate": "2026-08-07",
+        "summary": "都市女孩王结香被一只千纸鹤带入奇幻小岛，为逃离此地，她与化身为软萌兔子的失忆前男友殷显结伴踏上闯关冒险的旅途。二人在异世界的轮回中重新直面过往的遗憾，完成了双向的救赎与和解。影片融合现实与幻想的双重叙事，在奇幻冒险外壳下包裹着当代年轻人对爱情、遗憾、成长与和解的深层情绪共鸣。影片改编自晋江文学城番大王原著小说《去你的岛》。",
+        "duration": "119分钟"
+      }
+    },
+    "1552177": {
+      "name": "燃烧吧！爸爸",
+      "movieId": "1552177",
+      "poster": "https://p0.pipi.cn/mediaplus/friday_image_fe/e42958bf8455c29fd1c8be0724f19473491b5.jpg?imageMogr2/quality/80",
+      "category": "剧情,喜剧",
+      "releaseDate": "2026-09-05",
+      "summary": "顾立言（文淇 饰）与妈妈吴开蒂（倪虹洁 饰）面临至亲离别，追忆欢愉往昔，亦要面对遭逢变故后的各自成长。\n即将大学毕业的顾立言（文淇 饰）与精明伶俐的母亲吴开蒂（倪虹洁 饰）关系微妙，随着父亲顾卫星（喻恩泰 饰）的久病离世，二人一边应对繁琐未知的丧葬流程，一边发现父亲的另外一面人生。这对性格迥异的母女在各类啼笑皆非又荒诞抓马的事件中彼此了解，也更懂得那个处处为二人着想的父亲。",
+      "duration": "102分钟",
+      "enrich": {
+        "poster": "https://p0.pipi.cn/mediaplus/friday_image_fe/e42958bf8455c29fd1c8be0724f19473491b5.jpg?imageMogr2/quality/80",
+        "category": "剧情,喜剧",
+        "releaseDate": "2026-09-05",
+        "summary": "顾立言（文淇 饰）与妈妈吴开蒂（倪虹洁 饰）面临至亲离别，追忆欢愉往昔，亦要面对遭逢变故后的各自成长。\n即将大学毕业的顾立言（文淇 饰）与精明伶俐的母亲吴开蒂（倪虹洁 饰）关系微妙，随着父亲顾卫星（喻恩泰 饰）的久病离世，二人一边应对繁琐未知的丧葬流程，一边发现父亲的另外一面人生。这对性格迥异的母女在各类啼笑皆非又荒诞抓马的事件中彼此了解，也更懂得那个处处为二人着想的父亲。",
+        "duration": "102分钟"
+      }
+    },
+    "1365174": {
+      "name": "密档",
+      "movieId": "1365174",
+      "poster": "https://p0.pipi.cn/mediaplus/friday_image_fe/e42958bff87051f87b3e79446a31130610a99.jpg?imageMogr2/quality/80",
+      "category": "剧情,悬疑",
+      "releaseDate": "2026-08-28",
+      "summary": "电影《密档》以纪实还原性手法，讲述了守护我党机密档案的故事，由郑大圣执导。1942 年上海沦陷，风雨如晦，小沙渡路五十二号石库门深宅，悄然藏纳整批我党机要卷宗。日伪窥伺林立，周遭敌我难辨，方寸院落，处处暗藏生死危局。地下党员徐书亭（袁弘 饰）与妻子沈玉琳（李妍锡 饰）临危受命，隐于市井人海，恰如沧海滴水，在颠沛乱世中以身赴险，用生命守护希望的火种。",
+      "duration": "132分钟",
+      "enrich": {
+        "poster": "https://p0.pipi.cn/mediaplus/friday_image_fe/e42958bff87051f87b3e79446a31130610a99.jpg?imageMogr2/quality/80",
+        "category": "剧情,悬疑",
+        "releaseDate": "2026-08-28",
+        "summary": "电影《密档》以纪实还原性手法，讲述了守护我党机密档案的故事，由郑大圣执导。1942 年上海沦陷，风雨如晦，小沙渡路五十二号石库门深宅，悄然藏纳整批我党机要卷宗。日伪窥伺林立，周遭敌我难辨，方寸院落，处处暗藏生死危局。地下党员徐书亭（袁弘 饰）与妻子沈玉琳（李妍锡 饰）临危受命，隐于市井人海，恰如沧海滴水，在颠沛乱世中以身赴险，用生命守护希望的火种。",
+        "duration": "132分钟"
+      }
+    }
+  }
+}
