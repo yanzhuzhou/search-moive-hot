@@ -1,6 +1,6 @@
 #!/usr/bin/env python3.11
 # -*- coding: utf-8 -*-
-"""把 assets/style.css + assets/echarts.min.js + data/data.js + assets/app.js
+"""把 style.css + echarts.min.js + data/data.js + app.js
 内联进单一的 index.html（双击即可打开，零依赖）。"""
 import os
 
@@ -10,10 +10,10 @@ def read(p):
     with open(os.path.join(ROOT, p), encoding="utf-8") as f:
         return f.read()
 
-css = read("assets/style.css")
-echarts = read("assets/echarts.min.js")
+css = read("style.css")
+echarts = read("echarts.min.js")
 data_js = read("data/data.js")          # window.BOXDATA = {...};
-app = read("assets/app.js")
+app = read("app.js")
 
 html = f"""<!DOCTYPE html>
 <html lang="zh-CN">
@@ -97,7 +97,7 @@ html = f"""<!DOCTYPE html>
   <section class="view" id="viewInsight">
     <section class="panel">
       <h2>📈 近 7 日大盘走势 <span class="tag">每日</span></h2>
-      <div class="note" id="weeklyNote"></div>
+      <div id="weeklyNote"></div>
       <div id="weeklyChart" class="chart"></div>
     </section>
     <section class="panel">
