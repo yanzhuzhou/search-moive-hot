@@ -1,7 +1,7 @@
 # 国内电影票房数据分析看板
 
-三源票房爬虫 + **四源评分/简介富集** + 多维度分析静态站点，对应网页链接：https://yanzhuzhou.github.io/search-moive-hot/。
-
+三源票房爬虫 + **四源评分/简介富集** + 多维度分析静态站点，对应网页链接：[[https://yanzhuzhou.github.io/search-moive-hot/。](https://yanzhuzhou.github.io/search-moive-hot/)
+](https://yanzhuzhou.github.io/search-moive-hot/)
 ## 核心功能
 
 ### 票房数据（三源融合）
