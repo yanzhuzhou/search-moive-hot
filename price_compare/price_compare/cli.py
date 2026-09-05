@@ -98,7 +98,7 @@ def cmd_search(args: argparse.Namespace) -> int:
 
 
 def cmd_login(args: argparse.Namespace) -> int:
-    """Playwright 登录引导。"""
+    """Playwright 登录引导（虚拟显示器 + noVNC 远程操作）。"""
     try:
         from .scrapers.playwright_scrapers import (
             login_interactive, close_browser, playwright_available,
@@ -122,12 +122,18 @@ def cmd_login(args: argparse.Namespace) -> int:
         print(f"未知平台 {key}，可选: {list(platform_map.keys())}")
         return 1
     cn, url = platform_map[key]
-    ok = login_interactive(cn, url)
-    if ok:
-        print(f"\n✓ {cn} cookie 已保存。现在可以运行:")
+    print(f"\n【登录引导】正在为 {cn} 打开登录页...")
+    print(f"请在 noVNC 网页（http://<沙箱地址>:6080/vnc.html）中完成登录。")
+    print(f"登录成功后脚本会自动检测并保存 cookie，无需手动操作。\n")
+    result = login_interactive(cn, url, timeout=args.timeout)
+    if result["success"]:
+        print(f"\n✓ {cn} 登录成功！cookie 已保存到 {result['cookie_file']}（耗时 {result['elapsed']}s）")
+        print(f"现在可以运行:")
         print(f"  python -m price_compare.cli search 关键词 --scraper playwright --real")
+    else:
+        print(f"\n✗ {cn} 登录失败：{result['error']}")
     close_browser()
-    return 0 if ok else 1
+    return 0 if result["success"] else 1
 
 
 def cmd_report(args: argparse.Namespace) -> int:
@@ -163,9 +169,11 @@ def build_parser() -> argparse.ArgumentParser:
     sp.add_argument("--json", help="结果保存到 JSON 文件路径")
     sp.set_defaults(func=cmd_search, platforms=None)
 
-    lp = sub.add_parser("login", help="Playwright 首次登录引导（保存 cookie）")
+    lp = sub.add_parser("login", help="Playwright 登录引导（通过 noVNC 远程操作浏览器）")
     lp.add_argument("platform", choices=["jd", "taobao", "pinduoduo"],
                     help="要登录的平台")
+    lp.add_argument("--timeout", type=int, default=300,
+                    help="等待登录超时秒数（默认 300）")
     lp.set_defaults(func=cmd_login)
 
     rp = sub.add_parser("report", help="从已保存的 JSON 文件出报告")

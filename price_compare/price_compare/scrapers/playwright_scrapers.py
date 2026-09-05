@@ -126,38 +126,97 @@ def close_browser() -> None:
 
 
 # ---- 登录辅助 -------------------------------------------------------
-def login_interactive(platform: str, login_url: str) -> bool:
-    """headed 模式打开浏览器，等待用户手动登录，保存 cookie。"""
-    if not playwright_available():
-        print("playwright 未安装，无法执行登录引导。")
-        print("请先: pip install playwright && playwright install chromium")
+# 各平台登录成功检测条件：URL 不再是登录页 + cookie 中出现登录态字段
+_LOGIN_DETECT = {
+    "jd": {
+        "login_host": "passport.jd.com",
+        "cookie_keys": ("pt_key", "pt_pin"),
+    },
+    "taobao": {
+        "login_host": "login.taobao.com",
+        "cookie_keys": ("logincookie", "_m_h5_tk", "unb"),
+    },
+    "pinduoduo": {
+        "login_host": "mobile.yangkeduo.com/login",
+        "cookie_keys": ("PASS_ID", "pdd_user_id"),
+    },
+}
+
+
+def _detect_login_success(context: Any, platform: str) -> bool:
+    """检测是否已登录成功：cookie 中出现登录态字段。"""
+    cfg = _LOGIN_DETECT.get(platform, {})
+    cookie_keys = cfg.get("cookie_keys", [])
+    if not cookie_keys:
         return False
+    cookies = context.cookies()
+    cookie_names = {c.get("name", "") for c in cookies}
+    return any(k in cookie_names for k in cookie_keys)
+
+
+def login_interactive(platform: str, login_url: str, timeout: int = 300) -> dict:
+    """在虚拟显示器上 headed 模式打开浏览器，轮询检测登录成功后自动保存 cookie。
+
+    非交互式设计（沙箱无 TTY）：不等待 input()，而是轮询 cookie 检测登录态。
+    用户通过 noVNC 网页操作浏览器完成登录。
+
+    Args:
+        platform: "jd" / "taobao" / "pinduoduo"
+        login_url: 登录页 URL
+        timeout: 最长等待秒数（默认 300）
+    Returns:
+        {"success": bool, "elapsed": float, "cookie_file": str, "error": str}
+    """
+    result = {"success": False, "elapsed": 0, "cookie_file": "", "error": ""}
+    if not playwright_available():
+        result["error"] = "playwright 未安装"
+        return result
+    import time
     from playwright.sync_api import sync_playwright
+    start = time.time()
     pw = sync_playwright().start()
     launch_kwargs: dict[str, Any] = {
         "headless": False,
-        "args": ["--disable-blink-features=AutomationControlled"],
+        "args": [
+            "--disable-blink-features=AutomationControlled",
+            "--no-sandbox",
+            "--disable-dev-shm-usage",
+            "--start-maximized",
+        ],
     }
     exe = _find_chrome_executable()
     if exe:
         launch_kwargs["executable_path"] = exe
-    browser = pw.chromium.launch(**launch_kwargs)
     try:
-        context = browser.new_context()
+        browser = pw.chromium.launch(**launch_kwargs)
+        context = browser.new_context(viewport={"width": 1280, "height": 800})
         page = context.new_page()
-        print(f"\n【登录引导】正在打开 {platform} 登录页...")
-        print(f"请在弹出的浏览器窗口中完成登录，登录后回到本终端按回车保存 cookie。\n")
+        log.info("[login] 打开 %s 登录页: %s", platform, login_url)
         page.goto(login_url, wait_until="domcontentloaded", timeout=60000)
-        input("登录完成后，请在此处按回车 → ")
-        # 保存 cookie + localStorage
-        cookie_file = _cookie_path(platform)
-        state = context.storage_state()
-        cookie_file.write_text(json.dumps(state, ensure_ascii=False, indent=2))
-        print(f"✓ cookie 已保存到 {cookie_file}")
-        return True
+        # 轮询检测登录成功
+        while time.time() - start < timeout:
+            time.sleep(3)
+            if _detect_login_success(context, platform):
+                elapsed = round(time.time() - start, 1)
+                cookie_file = _cookie_path(platform)
+                state = context.storage_state()
+                cookie_file.write_text(json.dumps(state, ensure_ascii=False, indent=2))
+                log.info("[login] ✓ %s 登录成功，cookie 已保存 (%.1fs)", platform, elapsed)
+                result.update(success=True, elapsed=elapsed, cookie_file=str(cookie_file))
+                break
+        else:
+            result["error"] = f"等待 {timeout}s 超时，未检测到登录成功"
+            log.warning("[login] %s 登录超时", platform)
+    except Exception as e:  # noqa: BLE001
+        result["error"] = str(e)
+        log.error("[login] 异常: %s", e)
     finally:
-        browser.close()
+        try:
+            browser.close()
+        except Exception:  # noqa: BLE001
+            pass
         pw.stop()
+    return result
 
 
 def _load_context(browser, platform: str):
