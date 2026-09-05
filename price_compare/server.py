@@ -125,11 +125,13 @@ class Handler(BaseHTTPRequestHandler):
             scraper = body.get("scraper", "requests")
             real = bool(body.get("real", False))
             taobao_cookie = body.get("taobao_cookie", "")
+            jd_cookie = body.get("jd_cookie", "")
             pdd_anti = body.get("pdd_anti_content", "")
             try:
                 payload = run_search(
                     keyword=keyword, limit=limit, platforms=platforms,
                     scraper_type=scraper, real=real,
+                    jd_cookie=jd_cookie,
                     taobao_cookie=taobao_cookie, pdd_anti_content=pdd_anti)
                 self._send_json(200, payload)
             except Exception as e:  # noqa: BLE001

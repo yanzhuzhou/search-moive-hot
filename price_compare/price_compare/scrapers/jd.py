@@ -14,6 +14,8 @@ import re
 from ..models import Product, Platform
 from .base import BaseScraper, ScrapeError
 
+log = __import__("logging").getLogger("price_compare.scrapers.jd")
+
 _JD_SEARCH = "https://search.jd.com/Search"
 # 价格接口（历史公开接口，可能已变更）
 _JD_PRICE_API = "https://p.3.cn/prices/mgets"
@@ -22,6 +24,13 @@ _JD_PRICE_API = "https://p.3.cn/prices/mgets"
 class JDScraper(BaseScraper):
     name = "jd"
     platform_cn = Platform.JD.value
+
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        # 京东搜索页需要登录态 cookie 才能返回完整商品列表；
+        # 至少需要 pt_key + pt_pin 两个字段。
+        if self.cookie and "pt_key" not in self.cookie:
+            log.warning("[jd] cookie 中未检测到 pt_key，可能仍会被反爬拦截")
 
     def _fetch(self, keyword: str, limit: int) -> list[Product]:
         # 1) 抓搜索结果页

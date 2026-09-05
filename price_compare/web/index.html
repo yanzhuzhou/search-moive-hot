@@ -40,6 +40,19 @@
       </span>
       <label><input type="checkbox" id="realToggle" checked> 尝试真实数据</label>
     </div>
+    <div class="cookie-section">
+      <button type="button" class="cookie-toggle" id="cookieToggle">⚙ 高级选项：粘贴 Cookie 获取真实数据（点击展开）</button>
+      <div class="cookie-fields hidden" id="cookieFields">
+        <div class="cookie-field">
+          <label>京东 Cookie <span class="cookie-hint">（需含 pt_key 和 pt_pin，从浏览器 F12 复制）</span></label>
+          <textarea id="jdCookie" rows="2" placeholder="pt_key=xxx; pt_pin=xxx; ..."></textarea>
+        </div>
+        <div class="cookie-field">
+          <label>淘宝 Cookie <span class="cookie-hint">（需含 _m_h5_tk 等登录字段）</span></label>
+          <textarea id="taobaoCookie" rows="2" placeholder="cookie2=xxx; _m_h5_tk=xxx; ..."></textarea>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Playwright 登录引导条 -->

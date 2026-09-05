@@ -28,6 +28,15 @@ document.addEventListener("DOMContentLoaded", () => {
   $("resetBtn").addEventListener("click", onReset);
   $("keyword").addEventListener("keydown", (e) => { if (e.key === "Enter") onRun(); });
 
+  // Cookie 高级选项展开/收起
+  $("cookieToggle").addEventListener("click", () => {
+    const fields = $("cookieFields");
+    fields.classList.toggle("hidden");
+    $("cookieToggle").textContent = fields.classList.contains("hidden")
+      ? "⚙ 高级选项：粘贴 Cookie 获取真实数据（点击展开）"
+      : "⚙ 高级选项：粘贴 Cookie 获取真实数据（点击收起）";
+  });
+
   // 并行拉 demo + health
   Promise.all([fetch("/api/demo").then(r => r.json()),
                fetch("/api/health").then(r => r.json())])
@@ -86,6 +95,8 @@ async function onRun() {
   const limit = parseInt($("limit").value, 10) || 8;
   const scraper = document.querySelector('input[name="scraper"]:checked').value;
   const real = $("realToggle").checked;
+  const jd_cookie = $("jdCookie").value.trim();
+  const taobao_cookie = $("taobaoCookie").value.trim();
 
   setLoading(true, "正在采集 " + keyword + "…");
   $("runBtn").disabled = true;
@@ -93,7 +104,7 @@ async function onRun() {
     const resp = await fetch("/api/search", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ keyword, platforms, limit, scraper, real }),
+      body: JSON.stringify({ keyword, platforms, limit, scraper, real, jd_cookie, taobao_cookie }),
     });
     const data = await resp.json();
     if (!resp.ok) throw new Error(data.error || ("HTTP " + resp.status));

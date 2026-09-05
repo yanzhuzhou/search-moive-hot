@@ -25,6 +25,38 @@ log = logging.getLogger("price_compare.scrapers.playwright")
 COOKIE_DIR = Path(__file__).resolve().parent.parent.parent / ".playwright_cookies"
 
 
+def _find_chrome_executable() -> str | None:
+    """查找可用的 Chrome/Chromium 可执行文件。
+
+    优先顺序：环境变量 → puppeteer 缓存 → 系统安装 → playwright 默认。
+    """
+    env_path = os.environ.get("PRICE_COMPARE_CHROME_PATH")
+    if env_path and os.path.exists(env_path):
+        return env_path
+
+    candidates = [
+        Path.home() / ".cache/puppeteer/chrome",
+        Path.home() / ".cache/ms-playwright",
+    ]
+    for base in candidates:
+        if not base.exists():
+            continue
+        for exe in base.rglob("chrome"):
+            if exe.is_file() and os.access(exe, os.X_OK):
+                return str(exe)
+
+    for name in ("chromium", "chromium-browser", "google-chrome", "google-chrome-stable", "chrome"):
+        p = shutil_which(name)
+        if p:
+            return p
+    return None
+
+
+def shutil_which(name: str) -> str | None:
+    import shutil
+    return shutil.which(name)
+
+
 def _ensure_dir() -> Path:
     COOKIE_DIR.mkdir(parents=True, exist_ok=True)
     return COOKIE_DIR
@@ -58,13 +90,19 @@ def _get_browser():
     try:
         from playwright.sync_api import sync_playwright
         _browser_type = sync_playwright().start()
-        _browser_instance = _browser_type.chromium.launch(
-            headless=True,
-            args=[
+        exe = _find_chrome_executable()
+        launch_kwargs: dict[str, Any] = {
+            "headless": True,
+            "args": [
                 "--disable-blink-features=AutomationControlled",
                 "--no-sandbox",
+                "--disable-dev-shm-usage",
             ],
-        )
+        }
+        if exe:
+            launch_kwargs["executable_path"] = exe
+            log.debug("使用 Chrome: %s", exe)
+        _browser_instance = _browser_type.chromium.launch(**launch_kwargs)
         return _browser_instance
     except Exception as e:  # noqa: BLE001
         raise ScrapeError(f"浏览器启动失败: {e}") from e
@@ -96,7 +134,14 @@ def login_interactive(platform: str, login_url: str) -> bool:
         return False
     from playwright.sync_api import sync_playwright
     pw = sync_playwright().start()
-    browser = pw.chromium.launch(headless=False, args=["--disable-blink-features=AutomationControlled"])
+    launch_kwargs: dict[str, Any] = {
+        "headless": False,
+        "args": ["--disable-blink-features=AutomationControlled"],
+    }
+    exe = _find_chrome_executable()
+    if exe:
+        launch_kwargs["executable_path"] = exe
+    browser = pw.chromium.launch(**launch_kwargs)
     try:
         context = browser.new_context()
         page = context.new_page()

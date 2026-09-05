@@ -25,7 +25,10 @@ def make_scraper(platform: str, scraper_type: str = "requests", **kwargs) -> Bas
                 "taobao": PlaywrightTaobaoScraper,
                 "pinduoduo": PlaywrightPinduoduoScraper,
             }
-            return cls_map[platform](allow_real=True, **kwargs)
+            # Playwright 用 cookie 文件认证，不需要 taobao_cookie / pdd_anti_content
+            pw_kwargs = {k: v for k, v in kwargs.items()
+                         if k not in ("taobao_cookie", "pdd_anti_content")}
+            return cls_map[platform](**pw_kwargs)
         except ImportError as e:
             raise ScrapeError(
                 f"Playwright 模式需要先安装: pip install playwright && playwright install chromium (错误: {e})")
@@ -36,8 +39,11 @@ def make_scraper(platform: str, scraper_type: str = "requests", **kwargs) -> Bas
         "pinduoduo": PinduoduoScraper,
     }
     cls = cls_map[platform]
+    allow_real = kwargs.get("allow_real", True)
+    if platform == "jd":
+        return cls(allow_real=allow_real, cookie=kwargs.get("jd_cookie", ""))
     if platform == "taobao":
-        return cls(allow_real=True, cookie=kwargs.get("taobao_cookie", ""))
+        return cls(allow_real=allow_real, cookie=kwargs.get("taobao_cookie", ""))
     if platform == "pinduoduo":
-        return cls(allow_real=True, anti_content=kwargs.get("pdd_anti_content", ""))
-    return cls(allow_real=True)
+        return cls(allow_real=allow_real, anti_content=kwargs.get("pdd_anti_content", ""))
+    return cls(allow_real=allow_real)

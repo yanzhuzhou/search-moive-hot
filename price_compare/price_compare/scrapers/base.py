@@ -33,10 +33,11 @@ class BaseScraper:
     search_url_template: str = ""
 
     def __init__(self, timeout: float = 8.0, retries: int = 1,
-                 allow_real: bool = True) -> None:
+                 allow_real: bool = True, cookie: str = "") -> None:
         self.timeout = timeout
         self.retries = retries
         self.allow_real = allow_real
+        self.cookie = cookie.strip()
         self.stats: dict[str, Any] = {"attempted": False, "real_count": 0,
                                      "demo_count": 0, "elapsed_ms": 0,
                                      "source": "none"}
@@ -95,6 +96,8 @@ class BaseScraper:
         }
         if headers:
             h.update(headers)
+        if self.cookie:
+            h.setdefault("Cookie", self.cookie)
         last_err: Exception | None = None
         for attempt in range(self.retries + 1):
             try:

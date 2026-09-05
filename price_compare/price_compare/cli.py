@@ -39,6 +39,7 @@ def run_search(keyword: str, limit: int = 24,
                platforms: list[str] | None = None,
                scraper_type: str = "requests",
                real: bool = False,
+               jd_cookie: str = "",
                taobao_cookie: str = "",
                pdd_anti_content: str = "") -> dict[str, Any]:
     """执行一次完整搜索。
@@ -49,12 +50,13 @@ def run_search(keyword: str, limit: int = 24,
         platforms: 平台列表
         scraper_type: "requests" (默认 urllib) / "playwright" (浏览器)
         real: 是否尝试真实抓取（real=False 时全部回退演示数据）
-        taobao_cookie / pdd_anti_content: 原生 requests 模式需要的认证参数
+        jd_cookie / taobao_cookie / pdd_anti_content: 认证参数
     """
     platforms = platforms or ["jd", "taobao", "pinduoduo"]
     scrapers = [
         make_scraper(p, scraper_type=scraper_type,
                      allow_real=real,
+                     jd_cookie=jd_cookie,
                      taobao_cookie=taobao_cookie,
                      pdd_anti_content=pdd_anti_content)
         for p in platforms
@@ -80,6 +82,7 @@ def cmd_search(args: argparse.Namespace) -> int:
     payload = run_search(
         keyword=args.keyword, limit=args.limit, platforms=args.platforms,
         scraper_type=args.scraper, real=args.real,
+        jd_cookie=args.jd_cookie,
         taobao_cookie=args.taobao_cookie, pdd_anti_content=args.pdd_anti_content)
     products = [Product.from_dict(p) for p in payload["products"]]
     print(render_full(products))
@@ -153,6 +156,8 @@ def build_parser() -> argparse.ArgumentParser:
     sp.add_argument("--real", action="store_true",
                     help="尝试真实抓取（默认关闭，使用演示数据）")
     sp.add_argument("--taobao-cookie", default="", help="淘宝登录态 cookie（requests 模式 --real 时有效）")
+    sp.add_argument("--jd-cookie", default="",
+                    help="京东登录态 cookie（需含 pt_key 和 pt_pin，requests 模式 --real 时有效）")
     sp.add_argument("--pdd-anti-content", default="",
                     help="拼多多 anti_content 风控参数（requests 模式 --real 时有效）")
     sp.add_argument("--json", help="结果保存到 JSON 文件路径")
