@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>电商价格自动化采集与对比工具</title>
+<link rel="stylesheet" href="/web/style.css">
+<!-- ECharts CDN：用于价格分布与箱线图（在线渲染所需） -->
+<script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+</head>
+<body>
+<header>
+<div class="container">
+    <div class="brand">
+        <h1>电商价格自动化采集与对比工具</h1>
+        <span class="tag">京东 · 淘宝 · 拼多多</span>
+    </div>
+    <div class="search-bar">
+        <input type="text" id="keyword" placeholder="输入商品关键词，如：无线鼠标、机械键盘、蓝牙耳机"
+               value="无线鼠标">
+        <button class="btn" id="runBtn">开始采集</button>
+        <button class="btn ghost" id="resetBtn">恢复示例</button>
+    </div>
+    <div class="opts">
+        <span>平台：</span>
+        <label class="platform-chip on" data-pf="jd"><input type="checkbox" checked>京东</label>
+        <label class="platform-chip on" data-pf="taobao"><input type="checkbox" checked>淘宝</label>
+        <label class="platform-chip on" data-pf="pinduoduo"><input type="checkbox" checked>拼多多</label>
+        <label>每平台 <input type="number" id="limit" value="8" min="2" max="30"></label>
+        <label><input type="checkbox" id="realToggle"> 尝试真实抓取（默认演示数据）</label>
+    </div>
+</div>
+</header>
+
+<main class="container">
+    <div class="banner" id="banner">
+        <b>说明：</b>当前为<b>演示数据</b>。京东/淘宝/拼多多均有登录态与风控反爬，
+        在无 cookie/风控参数的环境下会自动回退到内置演示数据，保证端到端可运行。
+        顶部输入框输入关键词后点击「开始采集」会现场调用后端脚本。
+    </div>
+
+    <div class="stats" id="stats"></div>
+
+    <div class="grid-2">
+        <div class="panel">
+            <h2>价格区间分布 <span class="hint">各档商品数与平台构成</span></h2>
+            <div id="distChart" class="chart"></div>
+        </div>
+        <div class="panel">
+            <h2>各平台价格箱线 <span class="hint">min / Q1 / 中位 / Q3 / max</span></h2>
+            <div id="boxChart" class="chart"></div>
+        </div>
+    </div>
+
+    <div class="panel">
+        <h2>性价比推荐 <span class="hint">综合 销量/价格/店铺评分</span></h2>
+        <div class="picks" id="picks"></div>
+    </div>
+
+    <div class="panel">
+        <h2>平台横向对比</h2>
+        <div id="platformStats" style="overflow-x:auto;"></div>
+    </div>
+
+    <div class="panel">
+        <h2>商品清单 <span class="hint" id="tableHint">按价格升序</span></h2>
+        <div class="filter-bar" id="filterBar"></div>
+        <div style="overflow-x:auto;">
+        <table id="productTable">
+            <thead>
+            <tr>
+                <th>#</th><th>平台</th><th>商品标题</th><th>价格(¥)</th>
+                <th>月销</th><th>店铺</th><th>评分</th><th>来源</th><th>链接</th>
+            </tr>
+            </thead>
+            <tbody id="productTbody"></tbody>
+        </table>
+        </div>
+    </div>
+
+    <div class="panel">
+        <h2>采集统计</h2>
+        <div class="scrapers" id="scrapers"></div>
+    </div>
+</main>
+
+<footer class="container">
+    price_compare v1.0 · 纯 Python 标准库实现 · 真实抓取失败时自动回退演示数据
+</footer>
+
+<script src="/web/app.js"></script>
+</body>
+</html>
