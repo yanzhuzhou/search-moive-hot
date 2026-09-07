@@ -12,9 +12,23 @@ def make_scraper(platform: str, scraper_type: str = "requests", **kwargs) -> Bas
 
     Args:
         platform: "jd" / "taobao" / "pinduoduo"
-        scraper_type: "requests" (默认) / "playwright"
+        scraper_type: "requests" (默认) / "playwright" / "manmanbuy" (免登录聚合)
         **kwargs: 传给采集器的额外参数（cookie、anti_content 等）
     """
+    if scraper_type == "manmanbuy":
+        try:
+            from .manmanbuy_scraper import (
+                ManmanbuyJDScraper, ManmanbuyTaobaoScraper, ManmanbuyPinduoduoScraper,
+            )
+            cls_map = {
+                "jd": ManmanbuyJDScraper,
+                "taobao": ManmanbuyTaobaoScraper,
+                "pinduoduo": ManmanbuyPinduoduoScraper,
+            }
+            return cls_map[platform]()
+        except ImportError as e:
+            raise ScrapeError(
+                f"manmanbuy 模式需要 playwright: pip install playwright && playwright install chromium (错误: {e})")
     if scraper_type == "playwright":
         try:
             from .playwright_scrapers import (

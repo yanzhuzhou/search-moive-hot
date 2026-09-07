@@ -35,8 +35,9 @@
       <span style="color:var(--border-strong)">|</span>
       <span style="font-weight:600;color:var(--text)">采集方式：</span>
       <span class="scraper-group">
-        <label><input type="radio" name="scraper" value="requests" checked><span>演示/requests</span></label>
-        <label><input type="radio" name="scraper" value="playwright"><span>Playwright 真实抓取</span></label>
+        <label><input type="radio" name="scraper" value="manmanbuy" checked><span>慢慢买聚合（免登录，推荐）</span></label>
+        <label><input type="radio" name="scraper" value="requests"><span>演示/requests</span></label>
+        <label><input type="radio" name="scraper" value="playwright"><span>Playwright 真实抓取（需登录）</span></label>
       </span>
       <label><input type="checkbox" id="realToggle" checked> 尝试真实数据</label>
     </div>
@@ -111,7 +112,7 @@
   </div>
 </div>
 
-<footer>PriceCompare v2.0 · 支持 Playwright 浏览器自动化真实抓取 & 演示数据回退 · 京东 · 淘宝 · 拼多多</footer>
+<footer>PriceCompare v2.1 · 慢慢买聚合免登录采集 / Playwright 登录抓取 / 演示数据回退 · 京东 · 淘宝 · 拼多多</footer>
 
 <div id="loginModal" class="hidden" style="position:fixed;inset:0;background:rgba(0,0,0,.4);display:flex;align-items:center;justify-content:center;z-index:50;">
   <div style="background:#fff;border-radius:14px;padding:24px;max-width:520px;box-shadow:0 20px 60px rgba(0,0,0,.2);">

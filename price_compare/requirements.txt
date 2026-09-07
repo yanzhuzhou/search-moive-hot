@@ -1,2 +1,3 @@
-# 纯标准库实现，无需第三方依赖
-# Python 3.8+ 即可运行
+# 默认用慢慢买聚合免登录采集，需要 playwright
+# 安装：pip install playwright && playwright install chromium && playwright install-deps chromium
+playwright>=1.40

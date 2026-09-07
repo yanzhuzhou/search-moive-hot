@@ -86,6 +86,18 @@ def cmd_search(args: argparse.Namespace) -> int:
         taobao_cookie=args.taobao_cookie, pdd_anti_content=args.pdd_anti_content)
     products = [Product.from_dict(p) for p in payload["products"]]
     print(render_full(products))
+    # 释放 Playwright 浏览器资源
+    if args.scraper in ("playwright", "manmanbuy"):
+        try:
+            from .scrapers.playwright_scrapers import close_browser as _close_pw
+            _close_pw()
+        except Exception:  # noqa: BLE001
+            pass
+        try:
+            from .scrapers.manmanbuy_scraper import close_browser as _close_mmb
+            _close_mmb()
+        except Exception:  # noqa: BLE001
+            pass
     print("\n采集统计（scraper=%s）：" % payload.get("scraper_type", "requests"))
     for s in payload["scraper_stats"]:
         print(f"  - {s['platform']:<5} 来源={s['source']:<5} "
@@ -157,8 +169,8 @@ def build_parser() -> argparse.ArgumentParser:
     sp.add_argument("-n", "--limit", type=int, default=24, help="每个平台采集条数上限")
     sp.add_argument("-p", "--platforms", default="jd,taobao,pinduoduo",
                     help="平台列表，逗号分隔，如 jd,taobao")
-    sp.add_argument("--scraper", choices=["requests", "playwright"], default="requests",
-                    help="采集器类型：requests(urllib，默认) / playwright(浏览器，需先 login)")
+    sp.add_argument("--scraper", choices=["requests", "playwright", "manmanbuy"], default="manmanbuy",
+                    help="采集器类型：manmanbuy(慢慢买聚合，免登录，推荐) / requests(urllib) / playwright(浏览器，需先 login)")
     sp.add_argument("--real", action="store_true",
                     help="尝试真实抓取（默认关闭，使用演示数据）")
     sp.add_argument("--taobao-cookie", default="", help="淘宝登录态 cookie（requests 模式 --real 时有效）")
