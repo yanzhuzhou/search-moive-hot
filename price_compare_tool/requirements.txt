@@ -1,0 +1,9 @@
+# 电商商品价格自动化采集与对比工具
+# 依赖说明：核心工具零额外依赖（仅用 Python 标准库）
+# 可选依赖：
+#   - matplotlib：用于 CLI 的 --png 静态图表导出
+#   （Web 演示页使用 ECharts CDN，无需后端依赖）
+
+# 安装可选依赖（如需 PNG 导出）：
+#   pip install matplotlib
+matplotlib>=3.5

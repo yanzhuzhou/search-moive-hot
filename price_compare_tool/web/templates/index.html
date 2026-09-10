@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>电商商品价格自动化采集与对比 · 演示</title>
+<style>
+  * { box-sizing: border-box; }
+  :root {
+    --jd: #e1251b; --tb: #ff7800; --pdd: #e02e24;
+    --bg: #f4f6fb; --card: #ffffff; --text: #1f2333; --muted: #6b7280;
+    --border: #e5e7eb; --accent: #2563eb;
+  }
+  body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+         margin:0; background:var(--bg); color:var(--text); }
+  header { background: linear-gradient(135deg, var(--jd) 0%, var(--tb) 50%, var(--pdd) 100%);
+           color:#fff; padding: 22px 24px; }
+  header h1 { margin:0 0 4px; font-size: 22px; font-weight:700; }
+  header .sub { opacity:.92; font-size:13px; }
+  .container { max-width:1240px; margin:0 auto; padding:18px 20px 40px; }
+
+  /* 搜索栏 */
+  .search-bar { background:var(--card); border-radius:12px; padding:16px 18px; margin-bottom:18px;
+                box-shadow:0 1px 3px rgba(0,0,0,.06); display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
+  .search-bar input { flex:1; min-width:200px; padding:11px 14px; border:1.5px solid var(--border);
+                      border-radius:8px; font-size:15px; outline:none; transition:border-color .15s; }
+  .search-bar input:focus { border-color:var(--accent); }
+  .search-bar button { padding:11px 22px; border:none; border-radius:8px; font-size:15px; font-weight:600;
+                       cursor:pointer; background:var(--accent); color:#fff; transition:background .15s; }
+  .search-bar button:hover { background:#1d4ed8; }
+  .search-bar button:disabled { background:#9ca3af; cursor:not-allowed; }
+  .search-bar .hint { font-size:12px; color:var(--muted); }
+  .example-chips { display:flex; gap:6px; flex-wrap:wrap; margin-left:auto; }
+  .example-chips span { font-size:12px; color:var(--muted); align-self:center; margin-right:4px; }
+  .chip { padding:4px 10px; background:#eef2ff; color:var(--accent); border-radius:12px; font-size:12px;
+          cursor:pointer; border:1px solid #e0e7ff; }
+  .chip:hover { background:#e0e7ff; }
+
+  /* 统计卡片 */
+  .stats { display:grid; grid-template-columns:repeat(auto-fit, minmax(170px,1fr)); gap:14px; margin-bottom:18px; }
+  .stat-card { background:var(--card); border-radius:12px; padding:14px 16px; box-shadow:0 1px 3px rgba(0,0,0,.06); }
+  .stat-card .label { font-size:12px; color:var(--muted); margin-bottom:4px; }
+  .stat-card .value { font-size:22px; font-weight:700; }
+  .stat-card .value.jd { color:var(--jd); } .stat-card .value.tb { color:var(--tb); }
+  .stat-card .value.pdd { color:var(--pdd); } .stat-card .value.accent { color:var(--accent); }
+
+  /* 图表网格 */
+  .chart-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:18px; }
+  .chart-card { background:var(--card); border-radius:12px; padding:16px 18px; box-shadow:0 1px 3px rgba(0,0,0,.06); }
+  .chart-card h3 { margin:0 0 8px; font-size:14px; color:#374151; }
+  @media (max-width: 900px) { .chart-grid { grid-template-columns:1fr; } }
+
+  /* 表格 */
+  .table-wrap { background:var(--card); border-radius:12px; overflow:hidden; box-shadow:0 1px 3px rgba(0,0,0,.06); }
+  table { width:100%; border-collapse:collapse; font-size:13px; }
+  th, td { padding:10px 12px; text-align:left; border-bottom:1px solid var(--border); vertical-align:top; }
+  th { background:#f9fafb; color:#4b5563; font-weight:600; position:sticky; top:0; }
+  tbody tr:hover { background:#f9fafb; }
+  td.price { color:var(--jd); font-weight:700; white-space:nowrap; }
+  td.title a { color:#1a73e8; text-decoration:none; } td.title a:hover { text-decoration:underline; }
+  td.title .shop { font-size:11px; color:var(--muted); margin-top:2px; display:block; }
+  .badge { display:inline-block; padding:2px 8px; border-radius:10px; font-size:11px; color:#fff; }
+  .badge.京东 { background:var(--jd); } .badge.淘宝 { background:var(--tb); } .badge.拼多多 { background:var(--pdd); }
+  .tag { display:inline-block; padding:2px 8px; border-radius:10px; font-size:11px; color:#fff; background:#9ca3af; }
+  .tag.全网最低 { background:#16a34a; } .tag.性价比之选 { background:#2563eb; }
+  .tag.销量冠军 { background:#9333ea; } .tag.品质优选 { background:#0891b2; }
+  .tag.暂不推荐 { background:#dc2626; }
+
+  .status { text-align:center; padding:24px; color:var(--muted); font-size:14px; }
+  .loading { display:inline-block; width:14px; height:14px; border:2px solid #d1d5db;
+             border-top-color:var(--accent); border-radius:50%; animation:spin .8s linear infinite; margin-right:8px; vertical-align:middle; }
+  @keyframes spin { to { transform:rotate(360deg); } }
+  .error { background:#fef2f2; color:#dc2626; padding:12px 16px; border-radius:8px; margin-bottom:14px; font-size:13px; }
+  footer { text-align:center; color:var(--muted); padding:20px; font-size:12px; }
+  .section-title { font-size:15px; font-weight:600; margin:18px 0 10px; color:#374151; }
+
+  /* 数据示例对照 */
+  .data-example { background:var(--card); border-radius:12px; padding:16px 18px; margin-bottom:18px;
+                  box-shadow:0 1px 3px rgba(0,0,0,.06); }
+  .data-example summary { cursor:pointer; font-weight:600; font-size:14px; color:#374151; user-select:none; }
+  .data-example summary .badge { margin-left:6px; }
+  .de-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:14px; margin-top:14px; }
+  .de-card { border:1px solid var(--border); border-radius:8px; overflow:hidden; }
+  .de-card .de-head { background:#f9fafb; padding:8px 12px; font-size:13px; font-weight:600; border-bottom:1px solid var(--border); }
+  .de-col { font-size:12px; }
+  .de-col .de-sub { padding:4px 12px; background:#eef2ff; color:#3730a3; font-weight:600; font-size:11px; }
+  .de-col pre { margin:0; padding:8px 12px; font-size:11.5px; line-height:1.5; white-space:pre-wrap; word-break:break-all;
+                background:#0f172a; color:#e2e8f0; max-height:200px; overflow:auto; }
+  .de-arrow { text-align:center; font-size:18px; color:#9ca3af; padding:4px 0; }
+</style>
+</head>
+<body>
+<header>
+  <h1>电商商品价格自动化采集与对比工具</h1>
+  <div class="sub">支持京东 · 淘宝 · 拼多多 · 关键词搜索 · 自动清洗去重排序 · 横向对比 · 性价比推荐 · 价格趋势可视化</div>
+</header>
+<div class="container">
+
+  <div class="search-bar">
+    <input id="kw" type="text" placeholder="输入关键词，例如：蓝牙耳机" />
+    <button id="runBtn" onclick="runCompare()">采集并对比</button>
+    <div class="example-chips">
+      <span>示例：</span>
+      <span class="chip" onclick="document.getElementById('kw').value='蓝牙耳机';runCompare()">蓝牙耳机</span>
+      <span class="chip" onclick="document.getElementById('kw').value='机械键盘';runCompare()">机械键盘</span>
+      <span class="chip" onclick="document.getElementById('kw').value='保温杯';runCompare()">保温杯</span>
+    </div>
+  </div>
+
+  <div id="alertBox"></div>
+
+  <div class="data-example" id="dataExampleBox"></div>
+
+  <div class="stats" id="statsBox"></div>
+
+  <div class="section-title">📊 数据可视化</div>
+  <div class="chart-grid" id="chartBox">
+    <div class="chart-card"><div class="status"><span class="loading"></span>正在加载示例数据...</div></div>
+  </div>
+
+  <div class="section-title">📋 商品明细（按价格升序）</div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>排名</th><th>平台</th><th>价格</th><th>销量</th><th>店铺评分</th>
+          <th>性价比</th><th>推荐</th><th>趋势</th><th>商品 / 店铺</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
+</div>
+<footer>由 price-compare 引擎驱动 · 数据为确定性演示数据（与真实平台字段结构一致）· <a href="../README.md" style="color:#6b7280">文档</a></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+<script src="/static/app.js"></script>
+</body>
+</html>
