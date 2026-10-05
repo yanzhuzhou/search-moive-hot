@@ -188,6 +188,13 @@
     }
   },
   "1552906": {
+    "douban": {
+      "score": 6.8,
+      "votes": 46592,
+      "url": "https://movie.douban.com/subject/37247814/",
+      "summary": null,
+      "ok": true
+    },
     "maoyan": {
       "score": 9.6,
       "url": "https://m.maoyan.com/films/1552906",
@@ -202,6 +209,24 @@
       "url": "https://m.maoyan.com/films/1528975",
       "intro": "《小猪佩奇》首部三维动画电影《小猪佩奇·完美假期》全国电影院热映中。\n当佩奇得知今年全家不会去度假时，她感到非常失落。然而一场突如其来的暴风雨，竟将她带到了遥远的中国！佩奇一路解锁奇妙冒险，直到与家人重逢，佩奇拥有了最完美的假期。",
       "wish": 90752,
+      "ok": true
+    }
+  },
+  "1586199": {
+    "douban": {
+      "score": 7.2,
+      "votes": 61610,
+      "url": "https://movie.douban.com/subject/37068446/",
+      "summary": null,
+      "ok": true
+    }
+  },
+  "1604748": {
+    "douban": {
+      "score": 6.4,
+      "votes": 13212,
+      "url": "https://movie.douban.com/subject/37667015/",
+      "summary": null,
       "ok": true
     }
   }
