@@ -170,6 +170,13 @@
     }
   },
   "248172": {
+    "douban": {
+      "score": 8.5,
+      "votes": 1176373,
+      "url": "https://movie.douban.com/subject/26100958/",
+      "summary": null,
+      "ok": true
+    },
     "maoyan": {
       "score": 9.1,
       "url": "https://m.maoyan.com/films/248172",
@@ -226,6 +233,24 @@
       "score": 6.4,
       "votes": 13212,
       "url": "https://movie.douban.com/subject/37667015/",
+      "summary": null,
+      "ok": true
+    }
+  },
+  "1578266": {
+    "douban": {
+      "score": 6.6,
+      "votes": 17568,
+      "url": "https://movie.douban.com/subject/37403222/",
+      "summary": null,
+      "ok": true
+    }
+  },
+  "1615946": {
+    "douban": {
+      "score": 7.0,
+      "votes": 13832,
+      "url": "https://movie.douban.com/subject/37899051/",
       "summary": null,
       "ok": true
     }
